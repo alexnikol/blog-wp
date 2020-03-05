@@ -1,0 +1,20 @@
+Options -Indexes
+
+RewriteEngine On
+RewriteBase /
+
+RewriteCond %{http_host} ^ipquants\.com$
+RewriteCond %{REQUEST_URI} !^/dist(/.*)$
+RewriteRule ^(.*)$ dist/$1 [L]
+
+RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
+
+ErrorDocument 403 https://ipquants.com/
+ErrorDocument 404 https://ipquants.com/
+ErrorDocument 500 https://ipquants.com/
+
+<files "\.(sql)$">
+    order allow,deny
+    deny from all
+</files>

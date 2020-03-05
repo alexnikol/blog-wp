@@ -1,0 +1,63 @@
+.preloader{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  z-index: 10;
+  transition: opacity .3s ease, visibility .3s ease;
+
+  &_loaded{
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  &__wrap{
+    position:absolute;
+    top:50%;
+    left:50%;
+    width:100px;
+    height:100px;
+    transform:translate(-50%, -50%);
+
+    hr{
+      position:absolute;
+      width:40%;
+      height:40%;
+      margin:0;
+      border:0;
+      border-radius:50%;
+      animation: spin 2s ease infinite;
+
+      &:first-child{
+        background-color:#1F396C;
+        animation-delay:-1.5s
+      }
+
+      &:nth-child(2){
+        background-color:#FF7227;
+        animation-delay:-1s
+      }
+
+      &:nth-child(3){
+        background-color:#1F396C;
+        animation-delay:-.5s
+      }
+
+      &:last-child{
+        background-color:#FF7227
+      }
+
+    }
+
+  }
+
+}
+
+@keyframes spin{
+  0%,100%{transform:translate(0)}
+  25%{transform:translate(160%)}
+  50%{transform:translate(160%, 160%)}
+  75%{transform:translate(0, 160%)}
+}

@@ -1,0 +1,53 @@
+.social {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+  }
+
+  svg{
+    display: block;
+    width: inherit;
+    height: inherit;
+    fill: #fff;
+    transition: fill .3s ease;
+  }
+
+}
+@media (min-width: $phone-landscape) {
+  .social {
+
+  }
+}
+@media (min-width: $tablet-portrait) {
+  .social {
+
+  }
+}
+@media (min-width: $tablet-landscape) {
+  .social {
+
+  }
+}
+@media (min-width: $desktop) {
+  .social {
+
+    a{
+      transition: background-color .3s ease;
+
+      &:hover svg{
+        fill: #FF7227;
+      }
+
+    }
+
+  }
+}
+

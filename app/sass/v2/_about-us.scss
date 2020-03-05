@@ -1,0 +1,107 @@
+.about-us {
+  padding: 54px 20px 34px;
+  color: #231F20;
+  font-size: 17px;
+  line-height: 30px;
+  background: url(../img/about-us__back.png) no-repeat center;
+  background-size: 256% auto;
+
+  h1, h2, h3, h4{
+    margin-bottom: 20px;
+    color: #1F396C;
+    font-size: 34px;
+    line-height: 40px;
+  }
+
+  &__content{
+    margin-bottom: 36px;
+
+    p:first-child{
+      margin-bottom: 22px;
+      color: #1F396C;
+      font-weight: bold;
+      font-size: 22px;
+      line-height: 28px;
+    }
+
+  }
+
+  &__btn-wrap{
+    text-align: center;
+  }
+
+}
+@media (min-width: $phone-landscape) {
+  .about-us {
+
+  }
+}
+@media (min-width: $tablet-portrait) {
+  .about-us {
+    padding-top: 154px;
+    padding-bottom: 126px;
+    font-size: 22px;
+    line-height: 41px;
+    background-size: contain;
+    background-position-y: calc( 50% + 64px );
+
+    h1, h2, h3, h4{
+      max-width: 520px;
+      margin-bottom: 62px;
+      font-size: 50px;
+      line-height: 56px;
+    }
+
+    &__content{
+      margin-bottom: 54px;
+
+      p:first-child{
+        line-height: 41px;
+      }
+
+    }
+
+  }
+}
+@media (min-width: $tablet-landscape) {
+  .about-us {
+
+    &__layout{
+      max-width: 995px;
+      margin: 0 auto;
+    }
+
+    &__content {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      position: relative;
+
+      p:first-child {
+        width: 244px;
+      }
+
+      p:not(:first-child){
+        width: calc( 100% - 372px );
+        margin-left: auto;
+      }
+
+    }
+
+    &__btn-wrap{
+      text-align: left;
+    }
+
+  }
+}
+@media (min-width: $desktop) {
+  .about-us {
+
+    &__layout {
+      position: relative;
+      left: 45px;
+    }
+
+  }
+}
+

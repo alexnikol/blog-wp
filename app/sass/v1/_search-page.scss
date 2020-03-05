@@ -1,0 +1,127 @@
+.search-page {
+
+  &__header{
+    margin-bottom: 52px;
+    background: url(../../img/blog-hero-background.png) repeat #FF7227;
+    background-size: cover;
+  }
+
+  &__header-layout{
+    position: relative;
+    padding: 30px 15px 125px;
+  }
+
+  &__title{
+    color: #fff;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 400;
+
+    span{
+      display: block;
+      font-size: 18px;
+      line-height: 22px;
+      font-weight: 300;
+    }
+
+  }
+
+  &__empty{
+    text-align: center;
+
+    .searchform{
+      margin-top: 25px;
+    }
+
+  }
+
+  &__item{
+    margin-bottom: 25px;
+  }
+
+  article{
+    margin: 0 0 25px;
+    padding: 0;
+  }
+
+  .more-link{
+    font-size: 14px;
+
+    span{
+      font-size: inherit;
+    }
+
+  }
+
+  .widget-area{
+    display: none;
+  }
+
+  .entry-content > *{
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+  }
+
+}
+@media (min-width: $phone-landscape) {
+  .search-page {
+
+  }
+}
+@media (min-width: $tablet-portrait) {
+  .search-page {
+
+    &__title{
+      font-size: 60px;
+      line-height: 71px;
+
+      span{
+        font-size: 30px;
+        line-height: 40px;
+      }
+
+    }
+
+  }
+}
+@media (min-width: $tablet-landscape) {
+  .search-page {
+    min-height: calc( 100vh - 306px );
+
+    &__header{
+      padding: 67px calc( 50% - 613px);
+      margin-bottom: 120px;
+    }
+
+    &__header-layout{
+      padding: 0 15px;
+    }
+
+    &__title {
+      font-size: 50px;
+      letter-spacing: 4px;
+      line-height: 60px;
+    }
+
+    &__empty{
+
+      .searchform{
+        margin-top: 45px;
+      }
+
+    }
+
+    article{
+      margin-bottom: 45px;
+    }
+
+  }
+}
+@media (min-width: $desktop) {
+  .search-page {
+
+  }
+}
+

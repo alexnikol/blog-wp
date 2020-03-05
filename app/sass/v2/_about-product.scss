@@ -1,0 +1,73 @@
+.about-product {
+  margin-bottom: 68px;
+  padding: 0 20px;
+  color: #231F20;
+  font-size: 17px;
+  line-height: 30px;
+  text-align: center;
+
+  &:before{
+    content: '';
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin: 0 auto 32px;
+    background: url(../img/icon-quotes.svg) center no-repeat;
+    background-size: cover;
+  }
+
+  &__footer{
+    color: #1F396C;
+    margin: 29px auto 0;
+
+    p:first-child{
+      margin-bottom: 13px;
+      font-size: 29px;
+      font-weight: bold;
+    }
+
+  }
+
+}
+@media (min-width: $phone-landscape) {
+  .about-product {
+
+  }
+}
+@media (min-width: $tablet-portrait) {
+  .about-product {
+    max-width: 680px;
+    margin: 0 auto 134px;
+    font-size: 22px;
+    line-height: 41px;
+
+    &:before{
+      margin-bottom: 23px;
+    }
+
+    &__footer{
+      margin-top: 38px;
+      font-size: 18px;
+
+      p:first-child {
+        margin-bottom: 2px;
+      }
+
+    }
+
+  }
+  .hero-inner + .about-product{
+    margin-top: -57px;
+  }
+}
+@media (min-width: $tablet-landscape) {
+  .about-product {
+
+  }
+}
+@media (min-width: $desktop) {
+  .about-product {
+
+  }
+}
+

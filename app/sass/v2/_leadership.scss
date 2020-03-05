@@ -1,0 +1,263 @@
+.leadership {
+  width: 100%;
+  margin-bottom: 72px;
+  padding: 0 18px;
+
+  &__preface{
+    margin-bottom: 50px;
+    color: #231F20;
+    font-size: 17px;
+    line-height: 30px;
+    text-align: center;
+
+    h1, h2, h3, h4{
+      margin-bottom: 15px;
+      color: #1F396C;
+      font-size: 34px;
+      font-weight: bold;
+      line-height: 40px;
+    }
+
+  }
+
+  &__item{
+
+    &:not(:last-child){
+      margin-bottom: 104px;
+    }
+
+    &:nth-child(3n + 1){
+
+      .leadership__ava:before{
+        width: 166px;
+        height: 243px;
+        background-image: url(../img/deco_ava_1.png);
+        transform: translate(calc( -50% - 22px), calc( -50% - 5px));
+      }
+
+    }
+    &:nth-child(3n + 2){
+
+      .leadership__ava:before{
+        width: 162px;
+        height: 171px;
+        background-image: url(../img/deco_ava_2.png);
+        transform: translate(calc( -50% - 25px), calc( -50% - 17px));
+      }
+
+    }
+    &:nth-child(3n + 3){
+
+      .leadership__ava:before{
+        width: 188px;
+        height: 182px;
+        background-image: url(../img/deco_ava_3.png);
+        transform: translate(calc( -50% - 27px), calc( -50% - 27px));
+      }
+
+    }
+    &:nth-child(3n + 4){
+
+      .leadership__ava:before{
+        width: 201px;
+        height: 206px;
+        background-image: url(../img/deco_ava_4.png);
+        transform: translate(calc( -50% + 13px), calc( -50% + 3px));
+      }
+
+    }
+    &:nth-child(3n + 5){
+
+      .leadership__ava:before{
+        width: 160px;
+        height: 172px;
+        background-image: url(../img/deco_ava_5.png);
+        transform: translate(calc( -50% - 16px), calc( -50% - 3px));
+      }
+
+    }
+
+  }
+
+  &__ava{
+    position: relative;
+    width: 167px;
+    height: 167px;
+    margin: 0 auto 54px;
+
+    div{
+      position: relative;
+      width: inherit;
+      height: inherit;
+      border-radius: 50%;
+      border: 7px solid #FF7227;
+      overflow: hidden;
+      transform: translateZ( 0 );
+    }
+
+    img{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 110%;
+      transform: translate( -50%, -50% );
+    }
+
+    &:before{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      content: '';
+    }
+
+  }
+
+  &__content{
+    color: #72737a;
+    font-size: 17px;
+    line-height: 30px;
+
+    > p:not(:last-child){
+      margin-bottom: 30px;
+    }
+
+  }
+
+  &__name{
+    margin-bottom: 4px;
+    color: #1F396C;
+    font-size: 34px;
+    font-weight: bold;
+    line-height: 40px;
+    text-align: center;
+  }
+
+  &__position{
+    margin-bottom: 10px;
+    color: #FF7227;
+    text-align: center;
+  }
+
+  &__linkedin{
+    display: block;
+    width: 42px;
+    height: 42px;
+    margin: 0 auto;
+
+    svg{
+      display: block;
+      width: inherit;
+      height: inherit;
+
+      > g > g {
+        fill: #0077B5;
+      }
+
+    }
+
+  }
+
+}
+@media (min-width: $phone-landscape) {
+  .leadership {
+
+  }
+}
+@media (min-width: $tablet-portrait) {
+  .leadership {
+
+    &__preface{
+      max-width: 590px;
+      margin: 0 auto 86px;
+      font-size: 22px;
+      line-height: 41px;
+
+      h1, h2, h3, h4{
+        margin-bottom: 35px;
+        font-size: 40px;
+      }
+
+    }
+
+    &__item{
+      margin-bottom: 112px;
+    }
+
+    &__ava{
+      margin-bottom: 40px;
+    }
+
+    &__name{
+      font-size: 34px;
+      line-height: 46px;
+    }
+
+    &__position{
+      margin-bottom: 26px;
+      font-size: 22px;
+    }
+
+    &__content {
+      font-size: 22px;
+      line-height: 1;
+
+      > p:not(:last-child){
+        margin-bottom: 42px;
+      }
+
+    }
+
+  }
+}
+@media (min-width: $tablet-landscape) {
+  .leadership {
+    margin: 0 auto 27px;
+    max-width: 1430px;
+
+    ul{
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-wrap: wrap;
+
+      li{
+        width: 50%;
+        max-width: 338px;
+        margin: 0 calc((50% - 338px)/2) 119px;
+        padding: 0 15px;
+      }
+
+    }
+
+    &__linkedin{
+
+      svg >  g > g {
+        transition: fill .3s ease;
+      }
+
+      &:hover svg >  g > g {
+        fill: #1F396C;
+      }
+
+    }
+
+  }
+}
+@media (min-width: $desktop) {
+  .leadership {
+
+    ul{
+
+      li{
+        width: 33.3333%;
+        margin: 0 calc((33.3333% - 338px)/2) 119px;
+      }
+
+    }
+
+  }
+}
+

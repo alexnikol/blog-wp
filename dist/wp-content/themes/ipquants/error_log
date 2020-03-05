@@ -1,0 +1,20 @@
+[28-Jul-2019 10:26:24 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/ipquants/public_html/dist/wp-content/themes/ipquants/index.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/ipquants/public_html/dist/wp-content/themes/ipquants/index.php on line 2
+[03-Sep-2019 09:16:12 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/ipquants/public_html/dist/wp-content/themes/ipquants/index.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/ipquants/public_html/dist/wp-content/themes/ipquants/index.php on line 2
+[04-Sep-2019 09:16:25 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/ipquants/public_html/dist/wp-content/themes/ipquants/index.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/ipquants/public_html/dist/wp-content/themes/ipquants/index.php on line 2
+[30-Sep-2019 23:36:59 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/ipquants/public_html/dist/wp-content/themes/ipquants/index.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/ipquants/public_html/dist/wp-content/themes/ipquants/index.php on line 2
+[05-Nov-2019 20:55:21 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/ipquants/public_html/dist/wp-content/themes/ipquants/index.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/ipquants/public_html/dist/wp-content/themes/ipquants/index.php on line 2

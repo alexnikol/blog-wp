@@ -1,0 +1,119 @@
+.article {
+  margin-bottom: 60px;
+  padding: 0 15px;
+  color: #72737a;
+  font-size: 18px;
+  line-height: 30px;
+
+  > p, dl, dd p{
+    margin-bottom: 30px;
+  }
+
+  dt{
+    font-weight: bold;
+  }
+
+  h1, h2, h3, h4{
+    margin-bottom: 26px;
+    color: #182959;
+    font-size: 24px;
+    line-height: 1.6;
+    font-weight: 400;
+    text-align: center;
+  }
+
+  span{
+    font-size: 14px;
+  }
+
+  .text-right{
+    text-align: right;
+  }
+
+  ul{
+    margin: -25px 0 30px;
+    padding-left: 14px;
+  }
+
+  li{
+    position: relative;
+    padding-left: 24px;
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 13px;
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background-color: #5F6067;
+    }
+
+  }
+
+  blockquote{
+    position: relative;
+    margin: 0 0 30px 37px;
+    color: rgba(114,115,122,.6);
+    font-style: italic;
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: -24px;
+      top: 13px;
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background-color: #5F6067;
+    }
+
+  }
+
+  img{
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  p a{
+    color: #1F396C;
+    text-decoration: underline;
+  }
+
+}
+@media (min-width: $phone-landscape) {
+  .article {
+
+  }
+}
+@media (min-width: $tablet-portrait) {
+  .article {
+
+  }
+}
+@media (min-width: $tablet-landscape) {
+  .article {
+    margin: 0 auto 127px;
+    max-width: 1030px;
+
+    h1, h2{
+      margin-bottom: 51px;
+      font-size: 50px;
+      letter-spacing: 4px;
+      line-height: 80px;
+    }
+
+  }
+}
+@media (min-width: $desktop) {
+  .article {
+
+    p a:hover{
+      text-decoration: none;
+    }
+
+  }
+}
+

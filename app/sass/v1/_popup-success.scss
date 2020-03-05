@@ -1,0 +1,28 @@
+.popup__success {
+  width: 100%;
+  max-width: 789px;
+  padding: 34px 26px 24px;
+  background-color: #fff;
+  border-radius: 10px;
+  text-align: center;
+}
+@media (min-width: $phone-landscape) {
+  .popup__success {
+
+  }
+}
+@media (min-width: $tablet-portrait) {
+  .popup__success {
+    padding: 80px 26px 135px;
+  }
+}
+@media (min-width: $tablet-landscape) {
+  .popup__success {
+
+  }
+}
+@media (min-width: $desktop) {
+  .popup__success {
+
+  }
+}

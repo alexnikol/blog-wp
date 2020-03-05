@@ -1,0 +1,86 @@
+.blog-hero {
+  margin-bottom: 52px;
+  background: url(../../img/blog-hero-background.png) repeat #FF7227;
+  background-size: cover;
+
+  &__layout{
+    position: relative;
+    padding: 30px 15px 125px;
+  }
+
+  &__title{
+    color: #fff;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 300;
+  }
+
+  h1, h2{
+    margin-bottom: 5px;
+    @include Roboto;
+    font-size: 22px;
+    font-weight: 900;
+    line-height: 1;
+  }
+
+  &__subscribe{
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+    width: calc( 100% - 30px);
+    max-width: 379px;
+    color: #fff;
+    font-size: 13px;
+    line-height: 17px;
+    font-weight: 900;
+    text-align: center;
+  }
+
+}
+@media (min-width: $phone-landscape) {
+  .blog-hero {
+
+  }
+}
+@media (min-width: $tablet-portrait) {
+  .blog-hero {
+    padding: 67px calc( 50% - 613px);
+
+    &__title{
+      font-size: 30px;
+      line-height: 40px;
+
+      & > div{
+        max-width: 60%;
+      }
+
+    }
+
+    h1, h2{
+      font-size: 60px;
+      line-height: 71px;
+    }
+
+    .hero__subscribe{
+      right: 12px;
+      bottom: 7px;
+    }
+
+  }
+}
+@media (min-width: $tablet-landscape) {
+  .blog-hero {
+    margin-bottom: 120px;
+
+    &__layout{
+      padding: 0 15px;
+    }
+
+  }
+}
+@media (min-width: $desktop) {
+  .blog-hero {
+
+  }
+}
+

@@ -1,0 +1,4 @@
+.idea/
+node_modules/
+dist/wp-config.php
+wp-config.php

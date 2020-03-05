@@ -1,0 +1,48 @@
+.request-demo {
+  padding: 28px 15px;
+  background: url(../../img/request-background.png) repeat #FF7227;
+  background-size: cover;
+  text-align: center;
+
+  .btn{
+    margin-bottom: 0;
+  }
+
+  &__title{
+    margin-bottom: 11px;
+    color: #fff;
+    @include Lato;
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 400;
+  }
+
+}
+@media (min-width: $phone-landscape) {
+  .request-demo {
+
+  }
+}
+@media (min-width: $tablet-portrait) {
+  .request-demo {
+    padding: 28px calc( 50% - 621px);
+
+    &__title{
+      font-size: 30px;
+      letter-spacing: 4px;
+      line-height: 68px;
+    }
+
+  }
+}
+@media (min-width: $tablet-landscape) {
+  .request-demo {
+
+  }
+}
+@media (min-width: $desktop) {
+  .request-demo {
+
+  }
+}
+
