@@ -120,7 +120,8 @@
             top: .18em;
             left: .39em;
             border-radius: 50%;
-            background-color: #FF7227;
+            //background-color: #FF7227;
+            background-color: #c42034;
             pointer-events: none;
             content: '';
           }
@@ -145,7 +146,8 @@
 
             &:after{
               height: .25em;
-              border: 1px solid #FF7227;
+              //border: 1px solid #FF7227;
+              border: 1px solid #c42034;
             }
 
           }
@@ -163,8 +165,10 @@
               height: 1.19em;
               width: 2.78em;
               border-top-right-radius: 15px;
-              border-right: 2px solid #FF7227;
-              border-top: 2px solid #FF7227;
+              //border-right: 2px solid #FF7227;
+              //border-top: 2px solid #FF7227;
+              border-right: 2px solid #c42034;
+              border-top: 2px solid #c42034;
             }
 
           }
@@ -182,8 +186,10 @@
               height: 4.96em;
               width: 3.63em;
               border-top-right-radius: 15px;
-              border-right: 2px solid #FF7227;
-              border-top: 2px solid #FF7227;
+              //border-right: 2px solid #FF7227;
+              //border-top: 2px solid #FF7227;
+              border-right: 2px solid #c42034;
+              border-top: 2px solid #c42034;
             }
 
           }
@@ -200,7 +206,8 @@
               width: .56em;
               height: .56em;
               border-radius: 50%;
-              background-color: #FF7227;
+              //background-color: #FF7227;
+              background-color: #c42034;
               box-sizing: border-box;
               pointer-events: none;
               content: '';

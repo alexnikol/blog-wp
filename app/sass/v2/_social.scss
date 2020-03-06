@@ -1,23 +1,54 @@
 .social {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 
-  a{
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 30px;
-    height: 30px;
-    overflow: hidden;
+
+  &__avatar {
+    display: block;
+    margin-bottom: 20px;
+
+    img {
+      display: block;
+      width: 120px;
+      height: auto;
+      border-radius: 50%;
+      overflow: hidden;
+    }
+
   }
 
-  svg{
-    display: block;
-    width: inherit;
-    height: inherit;
-    fill: #fff;
-    transition: fill .3s ease;
+  &__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 280px;
+
+    a {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: underline;
+      color: #1F396C;
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 10px;
+
+      img {
+        width: 30px;
+        height: 30px;
+        display: block;
+        transition: all .3s ease;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+    }
+
   }
 
 }
@@ -28,7 +59,19 @@
 }
 @media (min-width: $tablet-portrait) {
   .social {
+    justify-content: flex-start;
+    flex-direction: row;
 
+    &__avatar {
+      margin-bottom: 0;
+      margin-right: 30px;
+    }
+
+    &__list {
+      margin: 0;
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
   }
 }
 @media (min-width: $tablet-landscape) {
@@ -40,12 +83,21 @@
   .social {
 
     a{
-      transition: background-color .3s ease;
+      transition: all .3s ease;
 
-      &:hover svg{
-        fill: #FF7227;
+      &:hover {
+        opacity: .75;
+
+        img {
+          transform: scale(1.1);
+        }
+
       }
+    }
 
+    &__social {
+      max-width: 1097px;
+      margin: 0 auto;
     }
 
   }

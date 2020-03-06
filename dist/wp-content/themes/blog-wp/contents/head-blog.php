@@ -9,8 +9,12 @@
             <p>All problems always recur</p>
         </div>
 
-        <?php get_template_part( '/contents/content', 'subscribe'); ?>
+<!--        --><?php //get_template_part( '/contents/content', 'subscribe'); ?>
 
+    </div>
+
+    <div class="hero-inner__social">
+            <?php get_template_part( '/contents/content', 'social'); ?>
     </div>
 
 </div>

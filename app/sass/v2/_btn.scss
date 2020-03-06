@@ -18,14 +18,17 @@
 
     &-1{
       border-color: transparent;
-      background-color: #FF7227;
+      //background-color: #FF7227;
+      background-color: #c42034;
       color: #fff;
       transition: background-color .3s ease, border-color .3s ease, color .3s ease;
 
       &:active {
-        border-color: #FF7227;
+        border-color: #c42034;
+        //border-color: #FF7227;
         background-color: #fff;
-        color: #FF7227;
+        //color: #FF7227;
+        color: #c42034;
       }
 
     }
@@ -33,26 +36,31 @@
     &-2{
       border-color: transparent;
       background-color: #fff;
-      color: #FF7227;
+      //color: #FF7227;
+      color: #c42034;
       transition: background-color .3s ease, border-color .3s ease, color .3s ease;
 
       &:active {
         border-color: #fff;
-        background-color: #FF7227;
+        //background-color: #FF7227;
+        background-color: #c42034;
         color: #fff;
       }
 
     }
 
     &-3{
-      border-color: #FF7227;
+      //border-color: #FF7227;
+      border-color: #c42034;
       background-color: #fff;
-      color: #FF7227;
+      color: #c42034;
+      //color: #FF7227;
       transition: color .3s ease, background-color .3s ease;
 
       &:active {
         color: #fff;
-        background-color: #FF7227;
+        //background-color: #FF7227;
+        background-color: #c42034;
       }
 
     }
@@ -171,9 +179,11 @@
       &-1{
 
         &:hover {
-          border-color: #FF7227;
+          border-color: #c42034;
+          //border-color: #FF7227;
           background-color: #fff;
-          color: #FF7227;
+          //color: #FF7227;
+          color: #c42034;
         }
 
       }
@@ -182,7 +192,8 @@
 
         &:hover {
           border-color: #fff;
-          background-color: #FF7227;
+          background-color: #c42034;
+          //background-color: #FF7227;
           color: #fff;
         }
 
@@ -192,7 +203,8 @@
 
         &:hover {
           color: #fff;
-          background-color: #FF7227;
+          //background-color: #FF7227;
+          background-color: #c42034;
         }
 
       }

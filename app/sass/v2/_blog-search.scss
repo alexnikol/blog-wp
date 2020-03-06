@@ -4,7 +4,8 @@
   align-items: center;
   margin-bottom: 34px;
   padding-bottom: 14px;
-  border-bottom: 1px solid #FF7227;
+  //border-bottom: 1px solid #FF7227;
+  border-bottom: 1px solid #c42034;
 
   input{
     position: relative;
@@ -32,7 +33,8 @@
       width: 22px;
 
       .stroke{
-        fill: #FF7227;
+        //fill: #FF7227;
+        fill: #c42034;
       }
 
     }
@@ -68,7 +70,8 @@
       &:hover{
 
         .stroke{
-          fill: #FF7227;
+          //fill: #FF7227;
+          fill: #c42034;
         }
 
       }

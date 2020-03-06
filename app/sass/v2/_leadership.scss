@@ -90,7 +90,8 @@
       width: inherit;
       height: inherit;
       border-radius: 50%;
-      border: 7px solid #FF7227;
+      //border: 7px solid #FF7227;
+      border: 7px solid #c42034;
       overflow: hidden;
       transform: translateZ( 0 );
     }
@@ -137,7 +138,8 @@
 
   &__position{
     margin-bottom: 10px;
-    color: #FF7227;
+    //color: #FF7227;
+    color: #c42034;
     text-align: center;
   }
 

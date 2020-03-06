@@ -8,6 +8,8 @@
         <!-- site__footer-layout -->
         <div class="site__footer-layout">
 
+                    <?php get_template_part( '/contents/content', 'social'); ?>
+
         </div>
         <!-- /site__footer-layout -->
 

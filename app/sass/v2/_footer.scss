@@ -26,7 +26,8 @@
 
       &.active{
         pointer-events: none;
-        color: #FF7227;
+        //color: #FF7227;
+        color: #c42034;
       }
 
     }
@@ -41,7 +42,8 @@
     > span {
       display: block;
       margin-bottom: 8px;
-      color: #FF7227;
+      //color: #FF7227;
+      color: #c42034;
       font-size: 14px;
       font-weight: 900;
       text-align: center;
@@ -179,7 +181,8 @@
         transition: color .3s ease;
 
         &:hover{
-          color: #FF7227;
+          //color: #FF7227;
+          color: #c42034;
         }
 
       }
@@ -192,9 +195,11 @@
         transition: border-color .3s ease, background-color .3s ease, color .3s ease;
 
         &:hover{
-          border-color: #FF7227!important;
+          border-color: #c42034!important;
+          //border-color: #FF7227!important;
           background-color: #fff!important;
-          color: #FF7227!important;
+          //color: #FF7227!important;
+          color: #c42034!important;
         }
 
       }

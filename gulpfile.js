@@ -12,7 +12,7 @@ var autoprefixer    = require('gulp-autoprefixer');
 var browserSync     = require('browser-sync').create();
 var del             = require('del');
 
-let distPath = `dist/wp-content/themes/ipquants/assets`;
+let distPath = `dist/wp-content/themes/blog-wp/assets`;
 
 var paths = {
     views: 'app/**/*.html',

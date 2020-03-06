@@ -10,7 +10,7 @@
   text-align: center;
   overflow: hidden;
 
-  img{
+  > img{
     position: absolute;
     bottom: 0;
     left: 50%;
@@ -25,6 +25,18 @@
     width: 100%;
     padding: 0 20px;
     z-index: 1;
+  }
+
+  &__social {
+    position: relative;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, .5);
+
+    .social {
+      bottom: 10px;
+    }
+
   }
 
   &__content{
@@ -50,7 +62,8 @@
     & > span{
       display: block;
       margin-bottom: 12px;
-      color: #F89406;
+      //color: #F89406;
+      color: #c42034;
       font-size: 14px;
       line-height: 30px;
       font-weight: bold;
@@ -127,6 +140,11 @@
 }
 @media (min-width: $desktop) {
   .hero-inner {
+
+    &__social {
+      max-width: 1097px;
+      margin: 0 auto;
+    }
 
   }
 }

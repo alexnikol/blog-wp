@@ -51,7 +51,8 @@
       i{
         position: absolute;
         margin-left: 5px;
-        color: #FF7227;
+        //color: #FF7227;
+        color: #c42034;
         font-style: normal;
       }
 
@@ -137,7 +138,9 @@
       margin: 5px 30px 5px 0;
       user-select: none;
 
-      $checkbox: #FF7227;
+      //$checkbox: #FF7227;
+
+      $checkbox: #c42034;
 
       input {
         position: absolute;
@@ -365,7 +368,8 @@
         transition: color .3s ease;
 
         &:hover{
-          color: #FF7227;
+          //color: #FF7227;
+          color: #c42034;
         }
 
       }

@@ -43,7 +43,8 @@
         width: 10px;
         height: 10px;
         border-radius: 50%;
-        background-color: #FF7227;
+        //background-color: #FF7227;
+        background-color: #c42034;
         content: '';
       }
 
@@ -64,7 +65,8 @@
     position: relative;
     height: 2px;
     margin-bottom: 58px;
-    background-color: #FF7227;
+    //background-color: #FF7227;
+    background-color: #c42034;
 
     &:before{
       position: absolute;

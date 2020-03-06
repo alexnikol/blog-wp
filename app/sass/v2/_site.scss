@@ -25,8 +25,8 @@
   }
 
   &__footer{
-    background-color: #1F396C;
     padding: 44px 20px 40px;
+    border-top: 2px solid #E1E1E1;
   }
 
   &__article{
@@ -86,9 +86,6 @@
     &__wrap{
       position: relative;
       margin-top: 0;
-      background: url( ../img/blog-deco.png ) no-repeat top center;
-      background-size: contain;
-
     }
 
   }
