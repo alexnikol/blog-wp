@@ -3,12 +3,8 @@ Options -Indexes
 RewriteEngine On
 RewriteBase /
 
-RewriteCond %{http_host} ^alexalmostengineer.co.ua\.com$ [OR]
-RewriteCond %{HTTP_HOST} ^www\юalexalmostengineer.co.ua\.com$
+RewriteCond %{http_host} ^alexalmostengineer\.co.ua$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.alexalmostengineer\.co.ua$
 
 RewriteCond %{request_uri} !^/dist(/.*)$
 RewriteRule ^(.*)$ dist/$1 [L]
-
-ErrorDocument 403 http://alexalmostengineer.co.ua/
-ErrorDocument 404 http://alexalmostengineer.co.ua/
-ErrorDocument 500 http://alexalmostengineer.co.ua/
