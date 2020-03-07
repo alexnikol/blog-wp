@@ -5,14 +5,15 @@
 
     $count = wp_count_posts()->publish;
 
-	$category = get_terms( array (
-		'taxonomy' => 'post_tag',
-		'hide_empty' => false,
-	) );
+    $category = get_terms( array (
+        'taxonomy'   => 'post_tag',
+        'orderby'    => 'count',
+        'order'      => 'desc',
+        'hide_empty' => true,
+        'number'     => 20
+    ) );
 
-	if( $category ) {
-
-		?>
+	if( $category ) { ?>
 
 		<!-- blog-categories -->
 		<section class="blog-categories">
@@ -31,11 +32,6 @@
 
 				<?php
 
-				$category = get_terms( array (
-					'taxonomy' => 'post_tag',
-					'hide_empty' => false,
-				) );
-
 				foreach ( $category as $row ) {
 					$active = '';
 
@@ -44,8 +40,6 @@
 					}
 
 					?>
-
-
 
 					<li><a href="<?= get_category_link( $row -> term_id ) ?>" <?= $active ?>>
 							<?= $row -> name ?>

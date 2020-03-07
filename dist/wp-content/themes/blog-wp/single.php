@@ -19,8 +19,7 @@ $image_source = get_the_post_thumbnail_url();
         <div class="hero-article__layout">
 
             <div class="hero-article__content">
-                <h2>IT Blog</h2>
-                <p>Make some API</p>
+                <h2>Software Development Blog</h2>
             </div>
 
             <a href="<?= get_permalink(HOME) ?>" class="btn btn--color-1 btn--type-5"><span>Back</span></a>

@@ -5,11 +5,8 @@
     <div class="hero-inner__layout">
 
         <div class="hero-inner__content">
-            <h1>IT Blog</h1>
-            <p>All problems always recur</p>
+            <h1>Software Development Blog</h1>
         </div>
-
-<!--        --><?php //get_template_part( '/contents/content', 'subscribe'); ?>
 
     </div>
 
