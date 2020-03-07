@@ -8,11 +8,13 @@ get_header();
 
 $post_item_category = get_the_terms( $post->ID, 'category' );
 
+$image_source = get_the_post_thumbnail_url();
+
 ?>
 
     <div class="hero-article">
 
-        <img src="<?= DIRECT ?>img/back_good_hero_2.jpg" alt="img">
+        <img src="<?= $image_source; ?>" alt="img">
 
         <div class="hero-article__layout">
 
@@ -95,21 +97,5 @@ $post_item_category = get_the_terms( $post->ID, 'category' );
 
         <?php } ?>
     </div>
-
-    <!-- request-demo -->
-    <div class="request-demo request-demo--deco">
-
-        <div class="request-demo__layout">
-
-            <div class="request-demo__content">
-                <p>Get in touch with the ipQuants Research Team</p>
-            </div>
-
-            <a href="<?= DEMO ?>" class="btn btn--color-2 btn--type-3" target="_blank"><span>request a demo</span></a>
-
-        </div>
-
-    </div>
-    <!-- /request-demo -->
 
 <?php get_footer(); ?>
