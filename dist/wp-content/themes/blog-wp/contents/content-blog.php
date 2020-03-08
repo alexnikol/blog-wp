@@ -12,8 +12,7 @@
         <div class="blog">
 
 	        <?php foreach ($posts as $row) {
-                $post_item_category = get_the_terms( $row, 'category' );
-                $image_source = get_the_post_thumbnail_url();
+                $image_source = get_the_post_thumbnail_url($row);
                 ?>
 
                 <!-- blog__item -->
