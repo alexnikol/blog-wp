@@ -28,7 +28,7 @@
 
                     <?php if ( $image_source ): ?>
                     <a href="<?= get_permalink( $row ); ?>" class="blog__item-picture">
-                        <?= $image_source ?>
+                        <img src="<?= $image_source ?>" alt="<?= get_the_title($row); ?>" />
                     </a>
                     <?php endif; ?>
 
