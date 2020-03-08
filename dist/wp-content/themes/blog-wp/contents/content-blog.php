@@ -11,7 +11,9 @@
         <!-- blog -->
         <div class="blog">
 
-	        <?php foreach ($posts as $row) { ?>
+	        <?php foreach ($posts as $row) {
+                $image_source = get_the_post_thumbnail_url();
+                ?>
 
                 <!-- blog__item -->
                 <article class="blog__item">
@@ -22,7 +24,13 @@
                     </time>
                     <!-- /blog__date -->
 
-                    <h2 class="blog__topic"><?= get_the_title($row); ?></h2>
+                    <h2 class="blog__topic"><a href="<?= get_permalink( $row ); ?>"><?= get_the_title($row); ?></a></h2>
+
+                    <?php if ( $image_source ): ?>
+                    <a href="<?= get_permalink( $row ); ?>" class="blog__item-picture">
+                        <?= $image_source ?>
+                    </a>
+                    <?php endif; ?>
 
                     <p><?= get_the_excerpt( $row ); ?></p>
 

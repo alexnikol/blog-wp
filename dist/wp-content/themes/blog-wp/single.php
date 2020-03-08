@@ -14,7 +14,7 @@ $image_source = get_the_post_thumbnail_url();
 
     <div class="hero-article">
 
-        <img src="<?= $image_source; ?>" alt="img">
+        <img src="<?= DIRECT ?>pic/background.jpg" alt="img"/>
 
         <div class="hero-article__layout">
 
