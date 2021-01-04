@@ -6,6 +6,8 @@
 
 get_header();
 
+$id = get_the_ID();
+
 $post_item_category = get_the_terms( $post->ID, 'category' );
 
 $image_source = get_the_post_thumbnail_url();
@@ -55,6 +57,7 @@ $image_source = get_the_post_thumbnail_url();
             'order'         => 'DESC',
             'fields'        => 'ids',
             'post_status'   => 'publish',
+	    'exclude'	    => $id,
             'suppress_filters' => false
         );
 
