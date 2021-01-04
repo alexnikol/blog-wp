@@ -1,53 +1,47 @@
-<?php get_template_part( '/contents/head', 'blog'); ?>
 
-<!-- site__wrap -->
-<div class="site__layout">
+<div class="grid grid--tail">
 
-    <?php get_template_part( '/contents/content', 'aside'); ?>
+    <div class="grid__layout">
 
-    <!-- site__content -->
-    <div class="site__content">
+        <?php
+        $posts = get_all_posts();
+        foreach ($posts as $row) {
+            $image_source = get_the_post_thumbnail_url($row);
+            $link = get_permalink($row);
+            $title = get_the_title($row);
+            ?>
 
-        <!-- blog -->
-        <div class="blog">
+            <article class="grid__item">
 
-	        <?php foreach ($posts as $row) {
-                $image_source = get_the_post_thumbnail_url($row);
-                ?>
+                <a class="grid__item-thumbnail" href="<?= $link; ?>">
+                    <img src="<?= $image_source; ?>" alt="<?= $title; ?>">
+                </a>
 
-                <!-- blog__item -->
-                <article class="blog__item">
+                <div class="grid__item-body">
 
-                    <!-- blog__date -->
-                    <time datetime="<?= get_the_time('Y-m-d', $row); ?>" class="blog__date">
-                        <?= get_the_time('M j, Y', $row); ?>
-                    </time>
-                    <!-- /blog__date -->
+                    <header>
+                            <span class="grid__item-date">
+                                Posted <time datetime="<?= get_the_time('Y-m-d', $row); ?>"><?= get_the_time('M j, Y', $row); ?></time>
+                            </span>
+                        <h3 class="grid__item-title">
+                            <a href="<?= $link; ?>" rel="bookmark"><?= $title; ?></a>
+                        </h3>
+                    </header>
 
-                    <h2 class="blog__topic"><a href="<?= get_permalink( $row ); ?>"><?= get_the_title($row); ?></a></h2>
+                    <div class="grid__item-content">
+                        <p><?= get_the_excerpt( $row ); ?></p>
+                    </div>
 
-                    <?php if ( $image_source ): ?>
-                    <a href="<?= get_permalink( $row ); ?>" class="blog__item-picture">
-                        <img src="<?= $image_source ?>" alt="<?= get_the_title($row); ?>" />
-                    </a>
-                    <?php endif; ?>
+                    <footer class="grid__item-footer">
+                        <a href="<?= $link; ?>" class="btn btn--color-1">More</a>
+                    </footer>
 
-                    <p><?= get_the_excerpt( $row ); ?></p>
+                </div>
 
-                    <a href="<?= get_permalink( $row ); ?>" class="blog__more">READ MORE</a>
+            </article>
 
-                </article>
-                <!-- /blog__item -->
-
-	        <?php } ?>
-
-        </div>
-        <!-- /blog -->
-
-        <?= get_the_posts_pagination() ?>
+        <?php } ?>
 
     </div>
-    <!-- /site__content -->
 
 </div>
-<!-- /site__wrap -->

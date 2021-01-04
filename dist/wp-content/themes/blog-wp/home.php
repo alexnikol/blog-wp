@@ -1,10 +1,24 @@
 <?php
 /*
-      Template Name: Home Page
-  */
+  Template Name: Home Page
+*/
 
-get_header();
+get_header(); ?>
 
-get_template_part( '/contents/content', 'blog');
+<div class="site-content">
+    <div class="site-content__layout">
 
-get_footer();
+        <div class="breadcrumbs">
+            <a href="#">Home</a>
+            <span>Blog</span>
+        </div>
+
+        <h1 class="page-title">Posts</h1>
+
+    </div>
+
+    <?php get_template_part( '/contents/content', 'blog'); ?>
+
+</div>
+
+<?php get_footer(); ?>
