@@ -1,0 +1,279 @@
+.grid {
+
+  &__item{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 28px;
+    border-radius: 4px;
+    background-color: #f2f6fb;
+    color: #b0aebe;
+    overflow: hidden;
+  }
+
+  &__item-thumbnail{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+    img{
+      display: block;
+      max-width: 100%;
+      max-height: 100%;
+    }
+
+  }
+
+  &__item-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 25px;
+    font-size: 14px;
+    line-height: 20px;
+
+    header{
+      position: relative;
+      width: 100%;
+    }
+
+  }
+
+  &__item-date{
+    display: block;
+    margin-bottom: 11px;
+  }
+
+  &__item-title{
+    margin-bottom: 10px;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 500;
+  }
+
+  &__item-content{
+    margin-bottom: 15px;
+
+    p{
+      margin-bottom: 3px;
+    }
+
+    a{
+      text-decoration: underline;
+    }
+
+  }
+
+  &__item-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    width: 100%;
+    margin-top: auto;
+
+    & > * {
+      height: 34px;
+      border-radius: 4px;
+      font-size: 11px;
+    }
+
+    .btn{
+      padding: 0 20px;
+      text-transform: uppercase;
+    }
+
+  }
+
+  &__item-comments{
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px 12px 9px;
+    color: #B0ADBE;
+    transition: color .3s ease, background-color .3s ease;
+
+    svg{
+      display: block;
+      width: 14px;
+      margin-right: 5px;
+      fill: #B0ADBE;
+      transition: fill .3s ease;
+    }
+
+  }
+
+  &__item-status{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 57px;
+    padding: 4px 7px 6px;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 11px;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+
+    &.is-worked{
+      background-color: #DF5944;
+    }
+
+    &.is-paused{
+      background-color: #8895B6;
+    }
+
+    &.is-done{
+      background-color: #5FBF9E;
+    }
+
+  }
+
+  &__apple-link{
+    width: 105px;
+
+    svg{
+      display: block;
+      width: 100%;
+    }
+
+  }
+
+  &--tail{
+
+    .grid {
+
+      &__item-body{
+        flex: 1 0 auto;
+      }
+
+    }
+
+  }
+
+}
+@media (min-width: $phone-landscape) {
+  .grid {
+
+    &--tail{
+
+      .grid__layout{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: stretch;
+        margin: 0 -15px;
+      }
+
+      .grid__item{
+        max-width: calc((100% / 2) - 30px);
+        width: calc((100%/2) - 30px);
+        flex: 0 0 calc((100%/2) - 30px);
+        margin: 0 15px 28px;
+      }
+
+    }
+
+  }
+}
+@media (min-width: $tablet-portrait) {
+  .grid {
+
+    &--tail{
+
+      .grid__item{
+        max-width: calc((100% / 3) - 30px);
+        width: calc((100%/3) - 30px);
+        flex: 0 0 calc((100%/3) - 30px);
+      }
+
+    }
+
+    &--rows{
+      max-width: 970px;
+      margin: 0 auto;
+
+      .grid{
+
+        &__item{
+          flex-direction: row;
+        }
+
+        &__item-thumbnail{
+          width: 255px;
+          height: 255px;
+          flex: 0 0 255px;
+
+          img{
+            width: inherit;
+            height: 100%;
+            -o-object-fit: cover;
+            object-fit: cover;
+          }
+
+        }
+
+        &__item-body{
+          width: calc( 100% - 255px );
+          padding: 20px 25px;
+        }
+
+        &__item-footer{
+          flex-direction: row-reverse;
+          justify-content: flex-start;
+
+          & > * {
+            margin-left: 20px;
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+}
+@media (min-width: $tablet-landscape) {
+  .grid {
+
+    &__item-title a{
+      transition: color .3s ease;
+
+      &:hover{
+        color: #ee4e3a;
+      }
+
+    }
+
+    &__item-comments{
+
+      &:hover{
+        color: #000;
+
+        svg{
+          fill: #000;
+        }
+
+      }
+
+    }
+
+    &--tail{
+
+      .grid__item{
+        max-width: calc((100% / 4) - 30px);
+        width: calc((100%/4) - 30px);
+        flex: 0 0 calc((100%/4) - 30px);
+      }
+
+    }
+
+  }
+}
+@media (min-width: $desktop) {
+  .grid {
+
+  }
+}

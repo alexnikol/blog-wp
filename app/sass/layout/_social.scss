@@ -1,0 +1,63 @@
+.social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  max-width: 320px;
+  margin: 0 auto;
+  z-index: 2;
+  
+  &__item{
+
+    svg{
+      display: block;
+      height: 25px;
+      fill: #fff;
+    }
+
+  }
+
+}
+@media (min-width: $phone-landscape) {
+  .social {
+
+  }
+}
+@media (min-width: $tablet-portrait) {
+  .social {
+    max-width: 300px;
+
+    &__item{
+
+      svg{
+        height: 30px;
+      }
+
+    }
+
+  }
+}
+@media (min-width: $tablet-landscape) {
+  .social {
+
+    &__item{
+
+      svg{
+        transition: fill .3s ease;
+      }
+
+      &:hover svg{
+        fill: #000;
+      }
+
+    }
+
+  }
+}
+@media (min-width: $desktop) {
+  .social {
+
+  }
+}
+

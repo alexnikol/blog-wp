@@ -1,0 +1,34 @@
+.site-header{
+  padding: 20px 16px 35px;
+  color: #fff;
+  background-color: #ee4e3a;
+  text-align: center;
+
+}
+@media (min-width: $phone-landscape) {
+  .site-header {
+
+  }
+}
+@media (min-width: $tablet-portrait) {
+  .site-header {
+
+  }
+}
+@media (min-width: $tablet-landscape) {
+  .site-header {
+    padding-top: 25px;
+    padding-bottom: 40px;
+
+    &__layout{
+      max-width: 990px;
+      margin: 0 auto;
+    }
+
+  }
+}
+@media (min-width: $desktop) {
+  .site-header {
+
+  }
+}

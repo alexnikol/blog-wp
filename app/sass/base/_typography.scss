@@ -1,0 +1,193 @@
+/**
+ * Basic typography style for copy text with class .article
+ */
+.article {
+  font-size: 14px;
+  line-height: 24px;
+
+  h1, h2, h3, h4, h5, h6{
+    margin-bottom: 20px;
+  }
+
+  h1{
+    font-size: 26px;
+    line-height: 33px;
+  }
+
+  h2{
+    font-size: 22px;
+    line-height: 33px;
+  }
+
+  h3, h4, h6{
+    font-size: 18px;
+    line-height: 33px;
+  }
+
+  p{
+
+    &:not(:last-child){
+      margin-bottom: 27px;
+    }
+
+  }
+
+  a{
+    color: #df5944;
+    text-decoration: underline;
+  }
+
+  ul, ol{
+    margin-bottom: 27px;
+
+    li{
+      position: relative;
+      margin-bottom: 10px;
+    }
+
+  }
+
+  ul{
+
+    li{
+      padding-left: 20px;
+
+      &:before{
+        content: '';
+        position: absolute;
+        top: 9px;
+        left: 3px;
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background-color: #df5944;
+      }
+
+    }
+
+  }
+
+  ol{
+    counter-reset: list;
+
+    li{
+      margin-left: 3px;
+
+      &:before{
+        margin-right: 5px;
+        counter-increment: list;
+        content: counter(list) ". ";
+
+      }
+
+    }
+
+  }
+
+  time{
+    margin-left: 20px;
+    color: #7f7d8e;
+  }
+
+  img{
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-bottom: 27px;
+  }
+
+  iframe{
+    display: block;
+    width: 100%;
+    border: none;
+    margin-bottom: 27px;
+  }
+
+  table{
+    width: 100%;
+    margin-bottom: 27px;
+
+    tr:nth-child(1){
+
+      td{
+        border-bottom: 1px solid rgba(100, 158, 151, .6);
+      }
+
+    }
+
+    td{
+      padding: 5px 5px 5px 0;
+    }
+
+  }
+
+  &__head{
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 16px;
+  }
+
+}
+@media (min-width: $phone-landscape) {
+  .article {
+
+  }
+}
+@media (min-width: $tablet-portrait) {
+  .article {
+    font-size: 18px;
+    line-height: 28px;
+
+    h1{
+      font-size: 32px;
+      line-height: 36px;
+    }
+
+    h2{
+      font-size: 26px;
+      line-height: 33px;
+    }
+
+    h3, h4, h6{
+      font-size: 18px;
+      line-height: 33px;
+    }
+
+    ul, ol {
+      margin-bottom: 47px;
+    }
+
+    ul{
+
+      li:before{
+        top: 12px;
+        width: 7px;
+        height: 7px;
+      }
+
+    }
+
+    img{
+      margin-bottom: 47px;
+    }
+
+    table{
+      margin-bottom: 37px;
+    }
+
+  }
+}
+@media (min-width: $tablet-landscape) {
+  .article {
+
+    a:hover{
+      text-decoration: none;
+    }
+
+  }
+}
+@media (min-width: $desktop) {
+  .article {
+
+  }
+}

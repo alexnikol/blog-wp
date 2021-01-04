@@ -50,32 +50,17 @@
 	function add_files() {
 
 		// scripts
-
 		wp_deregister_script('jquery');
-
-		wp_register_script('jquery', get_template_directory_uri() . '/assets/js/vendors/jquery-3.2.1.min.js',false, false, true);
-
-		wp_register_script('common-js', get_template_directory_uri() . '/assets/js/common.min.js', false, false, true);
-		wp_register_script('reCapthca', 'https://www.google.com/recaptcha/api.js', false, false, true);
+		wp_register_script('jquery', get_template_directory_uri() . '/assets/js/vendors/jquery-3.3.1.min.js',false, false, true);
+		wp_register_script('common-js', get_template_directory_uri() . '/assets/js/index.min.js', false, false, true);
 
 		// styles
-
-		wp_register_style('preload', get_template_directory_uri() . '/assets/css/preloader.css' );
 		wp_register_style('main-styles', get_template_directory_uri() . '/assets/css/common.css' );
-		wp_register_style('main-styles-v2', get_template_directory_uri() . '/assets/css/common-v2.css' );
 
 		// enqueue
-
 		wp_enqueue_script('jquery');
 		wp_enqueue_script('common-js');
-
-		wp_enqueue_style( 'preload' );
-        wp_enqueue_style( 'main-styles-v2' );
-
-		if (is_page_template('pages/page-contact.php')){
-			wp_enqueue_script('reCapthca');
-		}
-
+		wp_enqueue_style( 'main-styles' );
 	}
 
     add_action( 'wp_enqueue_scripts', 'add_files' );

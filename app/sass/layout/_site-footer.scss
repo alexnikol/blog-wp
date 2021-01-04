@@ -1,0 +1,29 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the footer of the site/application.
+// -----------------------------------------------------------------------------
+.site-footer{
+  height: 30px;
+  margin-top: 50px;
+  background-color: #ee4e3a;
+}
+@media (min-width: $phone-landscape) {
+  .site-footer {
+
+  }
+}
+@media (min-width: $tablet-portrait) {
+  .site-footer {
+    margin-top: 100px;
+
+  }
+}
+@media (min-width: $tablet-landscape) {
+  .site-footer {
+
+  }
+}
+@media (min-width: $desktop) {
+  .site-footer {
+
+  }
+}

@@ -1,0 +1,113 @@
+.author {
+  margin-top: 10px;
+
+  & > * {
+    position: relative;
+    z-index: 2;
+  }
+
+  &__wrap{
+    height: 160px;
+    width: 160px;
+  }
+
+  &__photo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 160px;
+    width: 160px;
+    margin: 0 auto 35px;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    box-shadow: 0 1px 1px rgba(0,0,0,.3);
+
+    img{
+      display: block;
+      width: 100%;
+      border-radius: inherit;
+    }
+
+  }
+
+  &__followers{
+    position: absolute;
+    top: 0;
+    left: calc(100% - 15px);
+    padding: 3px 7px 4px;
+    border: 1px solid #8799a6;
+    border-radius: 4px;
+    color: #333;
+    font-size: 11px;
+    white-space: nowrap;
+    background-color: #fff;
+    text-align: center;
+
+    &:before, &:after{
+      right: 100%;
+      top: 50%;
+      border: solid transparent;
+      content: " ";
+      height: 0;
+      width: 0;
+      position: absolute;
+      pointer-events: none;
+    }
+
+    &:before{
+      border-color: transparent;
+      border-right-color: #8799a6;
+      border-width: 6px;
+      margin-top: -6px;
+    }
+
+    &:after{
+      border-color: transparent;
+      border-right-color: #fff;
+      border-width: 5px;
+      margin-top: -5px;
+    }
+
+  }
+
+  &__title{
+    margin-bottom: 40px;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 14.4px;
+    text-transform: uppercase;
+    transform: scaleY(1.3);
+  }
+
+}
+@media (min-width: $phone-landscape) {
+  .author {
+
+  }
+}
+@media (min-width: $tablet-portrait) {
+  .author {
+    margin-top: 0;
+
+    &__photo{
+      margin-bottom: 44px;
+    }
+
+    &__title{
+      margin-bottom: 34px;
+      font-size: 26px;
+    }
+
+  }
+}
+@media (min-width: $tablet-landscape) {
+  .author {
+
+  }
+}
+@media (min-width: $desktop) {
+  .author {
+
+  }
+}
+
