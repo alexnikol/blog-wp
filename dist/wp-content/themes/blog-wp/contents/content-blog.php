@@ -9,6 +9,8 @@
             $image_source = get_the_post_thumbnail_url($row);
             $link = get_permalink($row);
             $title = get_the_title($row);
+            $excerpt = get_the_excerpt($row);
+            $excerpt = substr($excerpt, 0, 100);
             ?>
 
             <article class="grid__item">
@@ -29,7 +31,7 @@
                     </header>
 
                     <div class="grid__item-content">
-                        <p><?= get_the_excerpt( $row ); ?></p>
+                        <p><?= $excerpt; ?></p>
                     </div>
 
                     <footer class="grid__item-footer">

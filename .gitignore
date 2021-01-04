@@ -2,3 +2,4 @@
 node_modules/
 dist/wp-config.php
 wp-config.php
+dist/wp-content/themes/blog-wp/assets/*.html
