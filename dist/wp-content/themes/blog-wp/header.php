@@ -78,11 +78,10 @@
             </div>
 
             <nav class="navigation">
-                <a href="#">iOS</a>
-                <a href="#">Python</a>
-                <a href="#">iOS</a>
-                <a href="#">Python</a>
-                <a href="#">Python</a>
+                <a href="<?= get_permalink(HOME); ?>">Home</a>
+                <a href="<?= get_permalink(HOME); ?>">Algorithms and DS</a>
+                <a href="<?= get_permalink(HOME); ?>">Projects</a>
+                <a href="<?= get_permalink(HOME); ?>">Books</a>
             </nav>
 
             <form class="subscribe-form" method="post">
