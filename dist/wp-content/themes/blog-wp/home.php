@@ -6,14 +6,10 @@
 get_header(); ?>
 
 <div class="site-content">
+
     <div class="site-content__layout">
 
-        <div class="breadcrumbs">
-            <a href="#">Home</a>
-            <span>Blog</span>
-        </div>
-
-        <h1 class="page-title">Posts</h1>
+        <h1 class="page-title">Latest posts</h1>
 
     </div>
 

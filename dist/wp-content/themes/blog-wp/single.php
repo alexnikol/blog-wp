@@ -7,97 +7,43 @@
 get_header();
 
 $id = get_the_ID();
-
+$title = get_the_title();
 $post_item_category = get_the_terms( $post->ID, 'category' );
-
 $image_source = get_the_post_thumbnail_url();
 
 ?>
 
-    <div class="hero-article">
+<div class="site-content">
+    <div class="site-content__layout">
 
-        <img src="<?= DIRECT ?>pic/background.jpg" alt="img"/>
-
-        <div class="hero-article__layout">
-
-            <div class="hero-article__content">
-                <h2>Software Development Blog</h2>
-            </div>
-
-            <a href="<?= get_permalink(HOME) ?>" class="btn btn--color-1 btn--type-5"><span>Back</span></a>
-
-        </div>
-
+    <div class="breadcrumbs">
+        <a href="<?= get_permalink(HOME); ?>">Home</a>
+        <span><?= $title; ?></span>
     </div>
 
-    <div class="site__wrap">
+    <?php $categories = get_categories(); ?>
+    <?php if (!is_null($categories)): ?>
+        <ul class="tags">
+            <?php foreach ($categories as $category): ?>
+                <li><a href="<?= get_permalink($category->term_id); ?>"><?= $category->name; ?></a></li>
+            <?php endforeach; ?>
+        </ul>
+    <?php endif; ?>
 
-        <div class="site__article">
-
-            <div class="article">
-
-                <!-- blog__date -->
-                <time datetime="<?= get_the_time('Y-m-d', $row); ?>">
-                    <?= get_the_time('M j, Y', $row); ?>
-                </time>
-                <!-- /blog__date -->
-
-                <h1><?= get_the_title(); ?></h1>
-
-                <?= wpautop( get_post_field('post_content' ) ); ?>
-
-            </div>
-
+    <article class="article">
+        <div class="article__head">
+            <time datetime="<?= get_the_time('Y-m-d'); ?>">
+                <?= get_the_time('M j, Y'); ?>
+            </time>
         </div>
 
-        <?php $args = array(
-            'post_type'     => 'post',
-            'posts_per_page'=> 2,
-            'orderby'       => 'date',
-            'order'         => 'DESC',
-            'fields'        => 'ids',
-            'post_status'   => 'publish',
-	    'exclude'	    => $id,
-            'suppress_filters' => false
-        );
+        <h1><?= $title; ?></h1>
 
-        $posts = get_posts( $args );
+        <?php the_content(); ?>
 
-        if( $posts ) { ?>
+    </article>
 
-            <!-- blog-recent -->
-            <section class="blog-recent">
-
-                <h2 class="blog-recent__title">
-                    <span>Recent Posts</span>
-                </h2>
-
-                <?php foreach ( $posts as $row ) { ?>
-
-                    <!-- blog__item -->
-                    <article class="blog__item">
-
-                        <!-- blog__date -->
-                        <time datetime="<?= get_the_time('Y-m-d', $row); ?>" class="blog__date">
-                            <?= get_the_time('M j, Y', $row); ?>
-                        </time>
-                        <!-- /blog__date -->
-
-                        <h2 class="blog__topic"><?= get_the_title($row); ?></h2>
-
-                        <p><?= get_the_excerpt( $row ); ?></p>
-
-                        <a href="<?= get_permalink($row); ?>" class="blog__more">READ MORE</a>
-
-                    </article>
-                    <!-- /blog__item -->
-
-                <?php } ?>
-
-            </section>
-            <!-- /blog-recent -->
-
-        <?php } ?>
-    </div>
+</div>
+</div>
 
 <?php get_footer(); ?>
