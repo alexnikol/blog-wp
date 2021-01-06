@@ -38,3 +38,42 @@
 
 		acf_add_options_page( $args );
 	}
+
+
+function cw_post_type_projects() {
+
+    $supports = array(
+        'title',
+        'author',
+        'thumbnail',
+        'custom-fields'
+    );
+
+    $labels = array(
+        'name' => _x('Projects', 'plural'),
+        'singular_name' => _x('Projects', 'singular'),
+        'menu_name' => _x('Projects', 'admin menu'),
+        'name_admin_bar' => _x('Projects', 'admin bar'),
+        'add_new' => _x('Add New', 'add project'),
+        'add_new_item' => __('Add New project'),
+        'new_item' => __('New project'),
+        'edit_item' => __('Edit projects'),
+        'view_item' => __('View projects'),
+        'all_items' => __('All projects'),
+        'search_items' => __('Search projects'),
+        'not_found' => __('No projects found.'),
+    );
+
+    $args = array(
+        'supports' => $supports,
+        'labels' => $labels,
+        'public' => true,
+        'query_var' => true,
+        'rewrite' => array('slug' => 'projects'),
+        'has_archive' => true,
+        'hierarchical' => false,
+    );
+    register_post_type('projects', $args);
+}
+
+add_action('init', 'cw_post_type_projects');

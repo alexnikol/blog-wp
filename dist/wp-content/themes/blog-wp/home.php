@@ -7,13 +7,9 @@ get_header(); ?>
 
 <div class="site-content">
 
+    <h1 class="page-title">Latest posts</h1>
+
     <?php get_template_part( '/contents/content', 'categories-list'); ?>
-
-    <div class="site-content__layout">
-
-        <h1 class="page-title">Latest posts</h1>
-
-    </div>
 
     <?php
     $posts = get_all_posts();
