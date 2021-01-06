@@ -4,7 +4,7 @@
     <div class="grid__layout">
 
         <?php
-        $posts = get_all_posts();
+
         foreach ($posts as $row) {
             $image_source = get_the_post_thumbnail_url($row);
             $link = get_permalink($row);

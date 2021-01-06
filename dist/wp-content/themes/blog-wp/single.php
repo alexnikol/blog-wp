@@ -14,6 +14,7 @@ $image_source = get_the_post_thumbnail_url();
 ?>
 
 <div class="site-content">
+
     <div class="site-content__layout">
 
     <div class="breadcrumbs">
@@ -21,11 +22,11 @@ $image_source = get_the_post_thumbnail_url();
         <span><?= $title; ?></span>
     </div>
 
-    <?php $categories = get_categories(); ?>
+    <?php $categories = get_main_categories_by_post_id($id); ?>
     <?php if (!is_null($categories)): ?>
         <ul class="tags">
             <?php foreach ($categories as $category): ?>
-                <li><a href="<?= get_permalink($category->term_id); ?>"><?= $category->name; ?></a></li>
+                <li><a href="<?= get_category_link($category->term_id); ?>"><?= $category->name; ?></a></li>
             <?php endforeach; ?>
         </ul>
     <?php endif; ?>

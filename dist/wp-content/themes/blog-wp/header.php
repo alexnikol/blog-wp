@@ -79,7 +79,7 @@
 
             <nav class="navigation">
                 <a href="<?= get_permalink(HOME); ?>">Home</a>
-                <a href="<?= get_permalink(HOME); ?>">Algorithms and DS</a>
+                <a href="<?= get_category_link(ALG_and_DS); ?>">Algorithms and Data structures</a>
                 <a href="<?= get_permalink(HOME); ?>">Projects</a>
                 <a href="<?= get_permalink(HOME); ?>">Books</a>
             </nav>
