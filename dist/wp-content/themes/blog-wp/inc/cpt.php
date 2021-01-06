@@ -77,3 +77,41 @@ function cw_post_type_projects() {
 }
 
 add_action('init', 'cw_post_type_projects');
+
+function book_post_type_projects() {
+
+    $supports = array(
+        'title',
+        'author',
+        'thumbnail',
+        'custom-fields'
+    );
+
+    $labels = array(
+        'name' => _x('Books', 'plural'),
+        'singular_name' => _x('Books', 'singular'),
+        'menu_name' => _x('Books', 'admin menu'),
+        'name_admin_bar' => _x('Books', 'admin bar'),
+        'add_new' => _x('Add New', 'add book'),
+        'add_new_item' => __('Add New book'),
+        'new_item' => __('New book'),
+        'edit_item' => __('Edit books'),
+        'view_item' => __('View books'),
+        'all_items' => __('All books'),
+        'search_items' => __('Search books'),
+        'not_found' => __('No books found.'),
+    );
+
+    $args = array(
+        'supports' => $supports,
+        'labels' => $labels,
+        'public' => true,
+        'query_var' => true,
+        'rewrite' => array('slug' => 'books'),
+        'has_archive' => true,
+        'hierarchical' => false,
+    );
+    register_post_type('books', $args);
+}
+
+add_action('init', 'book_post_type_projects');

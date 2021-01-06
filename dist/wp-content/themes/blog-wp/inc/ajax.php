@@ -62,8 +62,8 @@ function get_posts_by_specific_tag_id($tag_slug) {
 function get_projects() {
     return get_posts( array(
         'numberposts' => -1,
-        'orderby'     => 'date',
-        'order'       => 'DESC',
+        'orderby'     => 'menu_order',
+        'order'       => 'ASC',
         'include'     => array(),
         'exclude'     => array(),
         'meta_key'    => '',
