@@ -8,9 +8,6 @@
   text-align: center;
 
   .author {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
 
     &__photo{
       margin-right: 20px;
@@ -33,9 +30,19 @@
     }
   }
 }
-@media (min-width: $phone-landscape) {
+@media (max-width: $tablet-portrait - 1) {
   .site-footer {
 
+    .author {
+
+      &__photo{
+        margin: 0 auto 20px;
+      }
+
+      .social {
+        justify-content: center;
+      }
+    }
   }
 }
 @media (min-width: $tablet-portrait) {
@@ -48,6 +55,13 @@
       max-width: 970px;
       margin: 0 auto;
     }
+
+    .author {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+    }
+
   }
 }
 @media (min-width: $tablet-landscape) {
