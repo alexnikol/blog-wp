@@ -1,4 +1,11 @@
-    <footer class="site-footer">
+<?php
+$home_id = 'options';
+$linkedIn = 'https://www.linkedin.com/in/alexander-nikolaychuk';
+$mail = 'alexalmostengineer@gmail.com';
+$hackerRank = 'https://www.hackerrank.com/alexEngineer';
+$github = 'https://github.com/alexnikol';
+$medium = 'https://medium.com/almostengineer-ios-software-developer-blog'; ?>
+<footer class="site-footer">
         <div class="site-footer__layout">
 
             <div class="author">
