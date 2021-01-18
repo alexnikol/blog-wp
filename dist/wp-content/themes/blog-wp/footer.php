@@ -4,7 +4,7 @@
             <div class="author">
 
                 <div class="author__photo">
-                    <img src="https://alexalmostengineer.co.ua/wp-content/themes/blog-wp/assets/pic/avatar.jpg" alt="Alex_almost_engineer"/>
+                    <img src="https://alexalmostengineer.co.ua/dist/wp-content/themes/blog-wp/assets/img/avatar.jpg" alt="Alex_almost_engineer"/>
                 </div>
 
                 <div>
