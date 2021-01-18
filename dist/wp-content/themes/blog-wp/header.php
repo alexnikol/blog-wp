@@ -37,6 +37,8 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="<?= $faviconPath ?>/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
+
+    <meta name="google-site-verification" content="5-PDF6nBGs-HOZIxyfFuh7byntQl4N7BLIw_JiT07Mg" />
 	<?php wp_head(); ?>
 
 	<?php if( is_front_page() || get_the_title() === '' ){ ?>
