@@ -60,7 +60,7 @@
 
             <div class="author">
 
-                <h2 class="author__title">Alex_almost_engineer</h2>
+                <a href="<?= get_permalink(HOME); ?>" class="author__title">Alex_almost_engineer</a>
 
             </div>
 
