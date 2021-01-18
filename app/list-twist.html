@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <include src="include/head.html"></include>
+
+    <title>Title</title>
+
+    <link rel="stylesheet" href="css/common.css">
+
+</head>
+<body>
+
+    <include src="include/preloader.html"></include>
+
+    <include src="include/site-header.html"></include>
+
+    <!-- site__content -->
+    <div class="site-content">
+        <div class="site-content__layout">
+
+            <div class="breadcrumbs">
+                <a href="#">Home</a>
+                <span>Books</span>
+            </div>
+
+            <h1 class="page-title">Books</h1>
+
+        </div>
+
+        <div class="grid grid--twist">
+
+            <div class="grid__layout">
+
+                <article class="grid__item" each="10">
+
+                    <a class="grid__item-thumbnail" href="#">
+                        <img src="https://m.media-amazon.com/images/I/810b1DUyN-L._AC_UY218_.jpg" alt="img" />
+                    </a>
+
+                    <div class="grid__item-body">
+
+                        <header>
+                            <span class="grid__item-date">
+                                Posted <time datetime="2018-08-15T13:47:24+00:00">August 15, 2018</time>
+                            </span>
+                            <h3 class="grid__item-title">
+                                <a href="#" rel="bookmark">Clean Architecture: A Craftsman's Guide to Software Structure and Design</a>
+                            </h3>
+                        </header>
+
+                        <div class="grid__item-content">
+                            <p><strong>Robert C. Martin Series</strong></p>
+                            <p>2012</p>
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </div>
+    <!-- /site__content -->
+
+    <include src="include/site-footer.html"></include>
+
+    <script src="js/vendors/jquery-3.3.1.min.js"></script>
+    <script src="js/index.min.js"></script>
+</body>
+</html>

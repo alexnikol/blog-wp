@@ -1,0 +1,35 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the footer of the site/application.
+// -----------------------------------------------------------------------------
+.site-content{
+  padding: 20px 27px 0;
+  background-color: #f6f8f9;
+  background-image: linear-gradient(0deg, #ffffff 90%, rgba(255,255,255,0) 100%);
+
+  &__layout{
+    max-width: 970px;
+    margin: 0 auto;
+  }
+
+}
+@media (min-width: $phone-landscape) {
+  .site-content {
+
+  }
+}
+@media (min-width: $tablet-portrait) {
+  .site-content {
+    padding-top: 60px;
+
+  }
+}
+@media (min-width: $tablet-landscape) {
+  .site-content {
+
+  }
+}
+@media (min-width: $desktop) {
+  .site-content {
+
+  }
+}

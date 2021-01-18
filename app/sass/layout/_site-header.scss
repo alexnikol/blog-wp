@@ -1,0 +1,66 @@
+.site-header{
+  padding: 40px 16px 35px;
+  color: #fff;
+  background-color: #ee4e3a;
+  text-align: center;
+
+  .social {
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto 33px;
+    justify-content: space-between;
+
+    &__item {
+      margin: 0;
+
+      svg {
+        fill: #fff;
+      }
+    }
+  }
+}
+@media (min-width: $tablet-portrait) {
+  .site-header {
+
+    .social {
+
+      &__item svg{
+        height: 30px;
+      }
+    }
+  }
+}
+@media (min-width: $tablet-landscape) {
+  .site-header {
+    padding-top: 45px;
+    padding-bottom: 40px;
+
+    &__layout{
+      max-width: 990px;
+      margin: 0 auto;
+    }
+
+    .social {
+      max-width: 300px;
+      margin-bottom: 30px;
+    }
+  }
+}
+@media (min-width: $desktop) {
+  .site-header {
+
+    .social {
+
+      &__item{
+
+        svg{
+          transition: fill .3s ease;
+        }
+
+        &:hover svg{
+          fill: #000;
+        }
+      }
+    }
+  }
+}

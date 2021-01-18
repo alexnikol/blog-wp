@@ -1,0 +1,37 @@
+.social {
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+  
+  &__item{
+    margin-right: 15px;
+
+    svg{
+      display: block;
+      height: 25px;
+      fill: #333;
+    }
+  }
+}
+@media (min-width: $tablet-portrait) {
+  .social {
+
+  }
+}
+@media (min-width: $tablet-landscape) {
+  .social {
+
+    &__item{
+
+      svg{
+        transition: fill .3s ease;
+      }
+
+      &:hover svg {
+        color: #000;
+      }
+    }
+  }
+}
+

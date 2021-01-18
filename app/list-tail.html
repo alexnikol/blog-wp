@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <include src="include/head.html"></include>
+
+    <title>Title</title>
+
+    <link rel="stylesheet" href="css/common.css">
+
+</head>
+<body>
+
+    <include src="include/preloader.html"></include>
+
+    <include src="include/site-header.html"></include>
+
+    <!-- site__content -->
+    <div class="site-content">
+        <div class="site-content__layout">
+
+            <div class="breadcrumbs">
+                <a href="#">Home</a>
+                <span>Blog</span>
+            </div>
+
+            <h1 class="page-title">Posts</h1>
+
+        </div>
+
+        <div class="grid grid--tail">
+
+            <div class="grid__layout">
+
+                <article class="grid__item" each="10">
+
+                    <a class="grid__item-thumbnail" href="#">
+                        <img src="https://ld-wp.template-help.com/monstroid2/default/wp-content/uploads/2018/08/light-img-post-7.jpg" alt="img" />
+                    </a>
+
+                    <div class="grid__item-body">
+
+                        <header>
+                            <span class="grid__item-date">
+                                Posted <time datetime="2018-08-15T13:47:24+00:00">August 15, 2018</time>
+                            </span>
+                            <h3 class="grid__item-title">
+                                <a href="#" rel="bookmark">The best solution for your business</a>
+                            </h3>
+                        </header>
+
+                        <div class="grid__item-content">
+                            <p>M2 is a ready-made solution for any kind of business! Be impressed with its options and...</p>
+                        </div>
+
+                        <footer class="grid__item-footer">
+                            <a href="#" class="btn btn--color-1">More</a>
+                            <a href="#" class="grid__item-comments">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1792 1536.3" style="enable-background:new 0 0 1792 1536.3;" xml:space="preserve">
+                                    <path d="M1792,640c0,116-40,223.2-120,321.5s-188.7,176-326,233s-287.3,85.5-450,85.5c-46.7,0-95-2.7-145-8  c-132,116.7-285.3,197.3-460,242c-32.7,9.3-70.7,16.7-114,22c-11.3,1.3-21.5-1.7-30.5-9s-14.8-17-17.5-29v-1c-2-2.7-2.2-6.7-0.5-12  c1.7-5.3,2.3-8.7,2-10s1.2-4.5,4.5-9.5l6-9l7-8.5l8-9c4.7-5.3,15-16.8,31-34.5s27.5-30.3,34.5-38s17.3-20.8,31-39.5  c13.7-18.7,24.5-35.7,32.5-51s17-35,27-59s18.7-49.3,26-76c-104.7-59.3-187.2-132.7-247.5-220S0,740,0,640  c0-86.7,23.7-169.5,71-248.5S182,244.3,262,187S437.3,84.2,548,50.5S774.7,0,896,0c162.7,0,312.7,28.5,450,85.5s246,134.7,326,233  S1792,524,1792,640z"/>
+                                </svg>
+                                0
+                            </a>
+                        </footer>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </div>
+    <!-- /site__content -->
+
+    <include src="include/site-footer.html"></include>
+
+    <script src="js/vendors/jquery-3.3.1.min.js"></script>
+    <script src="js/index.min.js"></script>
+</body>
+</html>

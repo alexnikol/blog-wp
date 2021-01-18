@@ -1,203 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="robots" content="noindex, nofollow">
-    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="format-detection" content="telephone=no">
-    <meta name="format-detection" content="address=no">
 
-    <title>ipQuants</title>
+    <include src="include/head.html"></include>
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:900|Roboto:400,500,700,900" rel="stylesheet">
+    <title>Title</title>
 
-    <style>
-        body { background-color: #F5F5F5; font-family: 'Roboto', sans-serif; color: #3F4551;}
-        .header { margin-top: 50px; }
-        .logo { font-size: 24px; color: #3F4551; font-family: 'Futura-Bold', sans-serif; font-weight: 400; }
-        .logo strong { color: #0200FF; font-weight: 400; }
-        .main { margin: 80px 0 50px; }
-        .intro { margin-bottom: 30px; }
-        .intro h1 { font-size: 65px; margin-bottom: 25px; font-weight: 900; }
-        .intro p {font-weight: 700;}
-        .pages-list { padding: 0; margin: 0; }
-        .pages-list li { border-bottom: 1px solid #979797; padding:15px; min-height: 65px; font-weight: 500;}
-        .pages-list li:last-child { border-bottom: none;}
-        .pages-list li a {
-            font-family: 'Raleway', sans-serif; font-size: 18px; line-height: 21px; color: #FFFFFF; font-weight: 900; text-transform: uppercase;
-            padding:10px 25px; border: 2px solid #0200FF; border-radius: 4px; text-align: center;
-            background-color: #0200FF;
-        }
-        .pages-list li a:hover,
-        .pages-list li a:focus,
-        .pages-list li a:active { background-color: transparent!important; color: #0200FF!important; border-color: #0200FF!important; box-shadow: none!important;}
-        .pages-list li .in-progress { font-size: 16px; text-transform: uppercase; font-weight: 700; color: #AAABAF; width: 155px; }
-
-        @media (max-width: 575px)
-        {
-            .header {margin-top: 30px; }
-            .logo {margin-bottom: 10px; }
-            .intro h1 { font-size: 50px; line-height: 52px;}
-            .main { margin-top: 60px; }
-            .pages-list li .page-name { max-width: 150px; }
-        }
-    </style>
+    <link rel="stylesheet" href="css/preload.css">
+    <link rel="stylesheet" href="css/common.css">
 
 </head>
 <body>
-    <div class="wrapper">
-        <header class="header">
-            <div class="container">
-                <div class="row justify-content-between">
-                    <div class="col-12 col-md-4 logo text-center">designstudio<strong>.AG</strong></div>
-                    <div class="col-12 col-md-4 customer-logo text-center">
-                        <img src="img/logo.png" class="img-fluid"/>
-                    </div>
-                </div>
+
+    <include src="include/preloader.html"></include>
+
+    <include src="include/site-header.html"></include>
+
+    <!-- site__content -->
+    <div class="site-content">
+        <div class="site-content__layout">
+
+            <div class="breadcrumbs">
+                <a href="#">Home</a>
+                <a href="#">Blog</a>
+                <span>Creating spectacular Blog layout with M2</span>
             </div>
-        </header>
-        <main class="main">
-            <div class="container">
-                <div class="row justify-content-center align-items-center">
-                    <div class="col-sm-12 col-md-9 mx-auto text-center intro">
-                        <h1>Front-end development</h1>
-                        <p>Please check out the pages that are ready for review. Your page will open in a new tab.</p>
-                    </div>
+
+            <ul class="tags">
+                <li><a href="#">Dart</a></li>
+                <li><a href="#">Swift</a></li>
+                <li><a href="#">apple</a></li>
+                <li><a href="#">iphone</a></li>
+                <li><a href="#">Angular</a></li>
+                <li><a href="#">React</a></li>
+            </ul>
+
+            <article class="article">
+
+                <div class="article__head">
+                    <a href="#">0 Comments</a>
+                    <time datetime="2020-07-02T22:00:18+02:00">2 July 2020</time>
                 </div>
-                <div class="row justify-content-center align-items-center">
-                    <div class="col-sm-11 col-md-7 mx-auto">
-                        <ul class="pages-list">
-                            <li class="d-flex justify-content-between align-items-center">
-                                <span class="page-name" style="width:100%;text-align:center"><strong>V2</strong></span>
-                            </li>
-                            <li class="d-flex justify-content-between align-items-center">
-                                <span class="page-name">Home Page</span>
-                                <a href="homepage-v2.html" class="btn btn-outline-primary" target="_blank">open page</a>
-                            </li>
-                            <li class="d-flex justify-content-between align-items-center">
-                                <span class="page-name">About Us</span>
-                                <a href="about-us-v2.html" class="btn btn-outline-primary" target="_blank">open page</a>
-                            </li>
-                            <li class="d-flex justify-content-between align-items-center">
-                                <span class="page-name">Blog List</span>
-                                <a href="blog-list.html" class="btn btn-outline-primary" target="_blank">open page</a>
-                            </li>
-                            <li class="d-flex justify-content-between align-items-center">
-                                <span class="page-name">Blog Article</span>
-                                <a href="blog-single.html" class="btn btn-outline-primary" target="_blank">open page</a>
-                            </li>
-                            <li class="d-flex justify-content-between align-items-center">
-                                <span class="page-name">Contact Us</span>
-                                <a href="contact-us-v2.html" class="btn btn-outline-primary" target="_blank">open page</a>
-                            </li>
-                            <li class="d-flex justify-content-between align-items-center">
-                                <span class="page-name">Demo Page</span>
-                                <a href="demo-v2.html" class="btn btn-outline-primary" target="_blank">open page</a>
-                            </li>
-                            <li class="d-flex justify-content-between align-items-center">
-                                <span class="page-name">CLI Page</span>
-                                <a href="ipQuants-CLI.html" class="btn btn-outline-primary" target="_blank">open page</a>
-                            </li>
-                            <li class="d-flex justify-content-between align-items-center">
-                                <span class="page-name">EXI Page</span>
-                                <a href="ipQuants-EXI.html" class="btn btn-outline-primary" target="_blank">open page</a>
-                            </li>
-                            <li class="d-flex justify-content-between align-items-center">
-                                <span class="page-name">SI Page</span>
-                                <a href="ipQuants-SI.html" class="btn btn-outline-primary" target="_blank">open page</a>
-                            </li>
-                            <li class="d-flex justify-content-between align-items-center">
-                                <span class="page-name">Research</span>
-                                <a href="research-v2.html" class="btn btn-outline-primary" target="_blank">open page</a>
-                            </li>
-                            <li class="d-flex justify-content-between align-items-center">
-                                <span class="page-name">Privacy</span>
-                                <a href="privacy.html" class="btn btn-outline-primary" target="_blank">open page</a>
-                            </li>
-                            <li class="d-flex justify-content-between align-items-center">
-                                <span class="page-name">Terms</span>
-                                <a href="terms.html" class="btn btn-outline-primary" target="_blank">open page</a>
-                            </li>
+
+                <h1>Creating spectacular Blog layout with M2</h1>
 
 
-                            <li class="d-flex justify-content-between align-items-center">
-                                <span class="page-name" style="width:100%;text-align:center"><strong>V1</strong></span>
-                            </li>
-                            <li class="d-flex justify-content-between align-items-center">
-                                <span class="page-name">Home Page</span>
-                                <a href="homepage.html" class="btn btn-outline-primary" target="_blank">open page</a>
-                            </li>
-                            <li class="d-flex justify-content-between align-items-center">
-                                <span class="page-name">About Us</span>
-                                <a href="about-us.html" class="btn btn-outline-primary" target="_blank">open page</a>
-                            </li>
-                            <li class="d-flex justify-content-between align-items-center">
-                                <span class="page-name">Blog List</span>
-                                <a href="blog-list.html" class="btn btn-outline-primary" target="_blank">open page</a>
-                            </li>
-                            <li class="d-flex justify-content-between align-items-center">
-                                <span class="page-name">Blog Article</span>
-                                <a href="blog-single.html" class="btn btn-outline-primary" target="_blank">open page</a>
-                            </li>
-                            <li class="d-flex justify-content-between align-items-center">
-                                <span class="page-name">Board of Appeal Insights</span>
-                                <a href="boa-page.html" class="btn btn-outline-primary" target="_blank">open page</a>
-                            </li>
-                            <li class="d-flex justify-content-between align-items-center">
-                                <span class="page-name">Customers</span>
-                                <a href="customers.html" class="btn btn-outline-primary" target="_blank">open page</a>
-                            </li>
-                            <li class="d-flex justify-content-between align-items-center">
-                                <span class="page-name">Customer Adamson</span>
-                                <a href="customers-adamson.html" class="btn btn-outline-primary" target="_blank">open page</a>
-                            </li>
-                            <li class="d-flex justify-content-between align-items-center">
-                                <span class="page-name">Customer Catey</span>
-                                <a href="customers-catey.html" class="btn btn-outline-primary" target="_blank">open page</a>
-                            </li>
-                            <li class="d-flex justify-content-between align-items-center">
-                                <span class="page-name">Customer Medtech</span>
-                                <a href="customers-medtech.html" class="btn btn-outline-primary" target="_blank">open page</a>
-                            </li>
-                            <li class="d-flex justify-content-between align-items-center">
-                                <span class="page-name">Customer Sunstein</span>
-                                <a href="customers-sunstein.html" class="btn btn-outline-primary" target="_blank">open page</a>
-                            </li>
-                            <li class="d-flex justify-content-between align-items-center">
-                                <span class="page-name">Contact Us</span>
-                                <a href="contact-us.html" class="btn btn-outline-primary" target="_blank">open page</a>
-                            </li>
-                            <li class="d-flex justify-content-between align-items-center">
-                                <span class="page-name">Industries</span>
-                                <a href="industries.html" class="btn btn-outline-primary" target="_blank">open page</a>
-                            </li>
-                            <li class="d-flex justify-content-between align-items-center">
-                                <span class="page-name">Product</span>
-                                <a href="product.html" class="btn btn-outline-primary" target="_blank">open page</a>
-                            </li>
-                            <li class="d-flex justify-content-between align-items-center">
-                                <span class="page-name">Research</span>
-                                <a href="research.html" class="btn btn-outline-primary" target="_blank">open page</a>
-                            </li>
-                            <li class="d-flex justify-content-between align-items-center">
-                                <span class="page-name">Why we are</span>
-                                <a href="why-we-are.html" class="btn btn-outline-primary" target="_blank">open page</a>
-                            </li>
-                            <li class="d-flex justify-content-between align-items-center">
-                                <span class="page-name">Privacy</span>
-                                <a href="privacy.html" class="btn btn-outline-primary" target="_blank">open page</a>
-                            </li>
-                            <li class="d-flex justify-content-between align-items-center">
-                                <span class="page-name">Terms</span>
-                                <a href="terms.html" class="btn btn-outline-primary" target="_blank">open page</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </main>
+                <p>M2 is a <i>ready-made solution</i> for any kind of business! Be impressed with its options and its rich functionality! You’ll discover stunning plugins, extended feature and even more functions you couldn’t even imagine!</p>
+
+                <img src="https://ld-wp.template-help.com/monstroid2/default/wp-content/uploads/2018/08/smart-list-img-7.jpg" alt="img"/>
+
+                <p>Previous version of <a href="#">M2 was left</a> in the past  and our team is looking forward to introduce the latest product to our audience. This super updated theme combines absolutely eye-catching design and powerful, but still easy to use package of plugins. Anyone will have the opportunity to install our great theme within just several clicks! Its Jet Plugins Wizard being responsible for installation. You’re also free to proceed with demo content installation to fill your site with M2 gorgeous content! Every page you installed can be edited, customized and saves as a template and then imported as a json file. M2 comes with a brilliant Magic Button – a kind of a library containing pre-designed pages and sections, which can be embedded to your site super easily.</p>
+
+                <img src="https://ld-wp.template-help.com/monstroid2/default/wp-content/uploads/2018/07/accord-v4-img-1.jpg" alt="img"/>
+
+                <p>M2 was <strong>updated by a team</strong> of high-class professionals, starting from designers to coders, whose goal was to deliver our clients with state-of-the-art product and meet the bravest requirements. M2 is a product of joint efforts of like-minded people, who care about future and present clients! Grasp the opportunity to build your site effortlessly and equip it with all the opportunities available with M2!</p>
+
+                <ul>
+                    <li>Previous version of M2 was left in the past</li>
+                    <li>Previous version of M2 was left in the past</li>
+                    <li>Previous version of M2 was left in the past</li>
+                    <li>Previous version of M2 was left in the past</li>
+                </ul>
+
+                <p>M2 was updated by a team of high-class professionals, starting from designers to coders, whose goal was to deliver our clients with state-of-the-art product and meet the bravest requirements. M2 is a product of joint efforts of like-minded people, who care about future and present clients! Grasp the opportunity to build your site effortlessly and equip it with all the opportunities available with M2!</p>
+
+                <ol>
+                    <li>Previous version of M2 was left in the past</li>
+                    <li>Previous version of M2 was left in the past</li>
+                    <li>Previous version of M2 was left in the past</li>
+                    <li>Previous version of M2 was left in the past</li>
+                </ol>
+
+                <p>M2 was updated by a team of high-class professionals, starting from designers to coders, whose goal was to deliver our clients with state-of-the-art product and meet the bravest requirements. M2 is a product of joint efforts of like-minded people, who care about future and present clients! Grasp the opportunity to build your site effortlessly and equip it with all the opportunities available with M2!</p>
+
+                <table>
+                    <tr>
+                        <td>col 1</td>
+                        <td>col 2</td>
+                        <td>col 3</td>
+                    </tr>
+                    <tr>
+                        <td>cell 1</td>
+                        <td>cell 2</td>
+                        <td>cell 3</td>
+                    </tr>
+                    <tr>
+                        <td>cell 1</td>
+                        <td>cell 2</td>
+                        <td>cell 3</td>
+                    </tr>
+                    <tr>
+                        <td>cell 1</td>
+                        <td>cell 2</td>
+                        <td>cell 3</td>
+                    </tr>
+                </table>
+
+            </article>
+
+        </div>
     </div>
+    <!-- /site__content -->
+
+    <include src="include/site-footer.html"></include>
+
+    <script src="js/vendors/jquery-3.3.1.min.js"></script>
+    <script src="js/index.min.js"></script>
 </body>
 </html>

@@ -1,0 +1,50 @@
+.breadcrumbs {
+  margin-bottom: 10px;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 20px;
+
+  a, span{
+    color: #7f7d8e;
+
+    &::first-letter{
+      text-transform: uppercase;
+    }
+
+  }
+
+  a{
+
+    &:after{
+      content: '/';
+      margin: 0 1px 0 4px;
+    }
+
+  }
+
+  span{
+
+  }
+
+}
+@media (min-width: $phone-landscape) {
+  .breadcrumbs {
+
+  }
+}
+@media (min-width: $tablet-portrait) {
+  .breadcrumbs {
+    margin-bottom: 20px;
+
+  }
+}
+@media (min-width: $tablet-landscape) {
+  .breadcrumbs {
+
+  }
+}
+@media (min-width: $desktop) {
+  .breadcrumbs {
+
+  }
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <include src="include/head.html"></include>
+
+    <title>Title</title>
+
+    <link rel="stylesheet" href="css/common.css">
+
+</head>
+<body>
+
+    <include src="include/preloader.html"></include>
+
+    <include src="include/site-header.html"></include>
+
+    <!-- site__content -->
+    <div class="site-content">
+        <div class="site-content__layout">
+
+            <div class="breadcrumbs">
+                <a href="#">Home</a>
+                <span>Blog</span>
+            </div>
+
+            <h1 class="page-title">Posts</h1>
+
+        </div>
+
+        <div class="grid grid--rows">
+
+            <div class="grid__layout">
+
+                <article class="grid__item" each="10">
+
+                    <a class="grid__item-thumbnail" href="#">
+                        <img src="https://ld-wp.template-help.com/monstroid2/default/wp-content/uploads/2018/08/light-img-post-7.jpg" alt="img" />
+                    </a>
+
+                    <div class="grid__item-body">
+
+                        <header>
+                            <span class="grid__item-date">
+                                Posted <time datetime="2018-08-15T13:47:24+00:00">August 15, 2018</time>
+                            </span>
+                            <h3 class="grid__item-title">
+                                <a href="#" rel="bookmark">The best solution for your business</a>
+                            </h3>
+
+                        </header>
+
+                        <div class="grid__item-content">
+                            <p>M2 is a <a href="#">ready-made solution</a> for any kind of business! Be impressed with its options and...</p>
+                        </div>
+
+                        <footer class="grid__item-footer"></footer>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </div>
+    <!-- /site__content -->
+
+    <include src="include/site-footer.html"></include>
+
+    <script src="js/vendors/jquery-3.3.1.min.js"></script>
+    <script src="js/index.min.js"></script>
+</body>
+</html>

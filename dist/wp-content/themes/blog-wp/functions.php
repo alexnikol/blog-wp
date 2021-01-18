@@ -5,9 +5,9 @@
     define( 'DIRECT', TEMPLATEURI.'/assets/' );
 
     define( 'HOME', 14 );
-    define( 'CONTACT_US', 231 );
-    define( 'DEMO', 819 );
-    define( 'BLOG', 14 );
+    define( 'ALG_and_DS', 53 );
+    define( 'PROJECTS', 516 );
+    define( 'BOOKS', 536 );
 
 	require_once( TEMPLATEINC . '/actions.php' );
 	require_once( TEMPLATEINC . '/cpt.php' );

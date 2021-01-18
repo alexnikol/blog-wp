@@ -1,0 +1,52 @@
+.navigation {
+
+  a{
+    display: block;
+    margin-bottom: 20px;
+    color: #fff;
+    text-transform: uppercase;
+
+    &.is-current {
+      text-decoration: underline;
+      pointer-events: none;
+    }
+
+  }
+
+}
+@media (min-width: $phone-landscape) {
+  .navigation {
+
+  }
+}
+@media (min-width: $tablet-portrait) {
+  .navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    a{
+      margin: 0 25px;
+    }
+
+  }
+}
+@media (min-width: $large-tablets) {
+  .navigation {
+
+    a{
+      transition: color .3s ease;
+
+      &:hover{
+        color: #3a4145;
+      }
+
+    }
+
+  }
+}
+@media (min-width: $desktop) {
+  .navigation {
+
+  }
+}
