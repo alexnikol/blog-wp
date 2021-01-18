@@ -4,8 +4,7 @@
     $mail = 'alexalmostengineer@gmail.com';
     $hackerRank = 'https://www.hackerrank.com/alexEngineer';
     $github = 'https://github.com/alexnikol';
-    $medium = 'https://medium.com/almostengineer-ios-software-developer-blog';
-?>
+    $medium = 'https://medium.com/almostengineer-ios-software-developer-blog'; ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -139,10 +138,12 @@
             </form>
 
             <nav class="navigation">
-                <a href="<?= get_permalink(HOME); ?>" class="is-current">Home</a>
-                <a href="<?= get_category_link(ALG_and_DS); ?>">Algorithms and Data structures</a>
-                <a href="<?= get_permalink(PROJECTS); ?>">Projects</a>
-                <a href="<?= get_permalink(BOOKS); ?>">Books suggestions</a>
+                <?php $category = get_the_category()[0];
+                $post_id = get_the_ID(); ?>
+                <a href="<?= get_permalink(HOME); ?>" class="<?= HOME == $post_id ? "is-current" : ""; ?>">Home</a>
+                <a href="<?= get_category_link(ALG_and_DS); ?>" class="<?= ALG_and_DS == $category->term_id ? "is-current" : ""; ?>">Algorithms and Data structures</a>
+                <a href="<?= get_permalink(PROJECTS); ?>"  class="<?= PROJECTS == $post_id ? "is-current" : ""; ?>">Projects</a>
+                <a href="<?= get_permalink(BOOKS); ?>"  class="<?= BOOKS == $post_id ? "is-current" : ""; ?>">Books suggestions</a>
             </nav>
 
         </div>

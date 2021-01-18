@@ -72,3 +72,17 @@ function get_projects() {
         'suppress_filters' => true,
     ) );
 }
+
+function get_books() {
+    return get_posts( array(
+        'numberposts' => -1,
+        'orderby'     => 'menu_order',
+        'order'       => 'ASC',
+        'include'     => array(),
+        'exclude'     => array(),
+        'meta_key'    => '',
+        'meta_value'  =>'',
+        'post_type'   => 'books',
+        'suppress_filters' => true,
+    ) );
+}
