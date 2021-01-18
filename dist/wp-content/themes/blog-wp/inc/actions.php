@@ -55,6 +55,7 @@
 		wp_register_script('common-js', get_template_directory_uri() . '/assets/js/index.min.js', false, false, true);
 
 		// styles
+		wp_register_style('preload-styles', get_template_directory_uri() . '/assets/css/preload.css' );
 		wp_register_style('main-styles', get_template_directory_uri() . '/assets/css/common.css' );
 
 		// enqueue

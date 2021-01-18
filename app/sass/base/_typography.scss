@@ -85,7 +85,7 @@
   }
 
   time{
-    margin-left: 20px;
+    display: block;
     color: #7f7d8e;
   }
 
@@ -122,16 +122,14 @@
   }
 
   &__head{
-    display: flex;
-    justify-content: flex-start;
+    width: 100%;
     margin-bottom: 16px;
+
+    .social {
+      margin-top: 20px;
+    }
   }
 
-}
-@media (min-width: $phone-landscape) {
-  .article {
-
-  }
 }
 @media (min-width: $tablet-portrait) {
   .article {
@@ -175,6 +173,9 @@
       margin-bottom: 37px;
     }
 
+    .tags {
+      margin-bottom: 27px;
+    }
   }
 }
 @media (min-width: $tablet-landscape) {
@@ -183,11 +184,5 @@
     a:hover{
       text-decoration: none;
     }
-
-  }
-}
-@media (min-width: $desktop) {
-  .article {
-
   }
 }

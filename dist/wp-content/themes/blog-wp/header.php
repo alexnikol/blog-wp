@@ -49,51 +49,18 @@
 </head>
 
 <body>
+    <div id="preload">
+        <span id="preload__loading-line"></span>
+    </div>
 
     <header class="site-header">
         <div class="site-header__layout">
 
-            <input id="menu-toggle" type="checkbox">
-
-            <label class="menu-hamburger" for="menu-toggle">
-                <span class="menu-hamburger__btn"></span>
-            </label>
-
-            <menu class="menu">
-                <li><a href="#" class="is-active">Home</a></li>
-                <li><a href="#">Posts</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">certificates</a></li>
-            </menu>
-
             <div class="author">
-                <?php $faviconPath = DIRECT . 'favicon'  ?>
-                <div class="author__photo">
-                    <div style="display:none" class="author__followers">11 349 followers</div>
-                    <img src="<?= DIRECT ?>img/avatar.jpg" alt="Alex_almost_engineer"/>
-                </div>
 
                 <h2 class="author__title">Alex_almost_engineer</h2>
 
             </div>
-
-            <nav class="navigation">
-                <a href="<?= get_permalink(HOME); ?>">Home</a>
-                <a href="<?= get_category_link(ALG_and_DS); ?>">Algorithms and Data structures</a>
-                <a href="<?= get_permalink(PROJECTS); ?>">Projects</a>
-                <a href="<?= get_permalink(BOOKS); ?>">Books suggestions</a>
-            </nav>
-
-            <form class="subscribe-form" method="post">
-                <div class="subscribe-form__field">
-                    <input type="email" name="email" placeholder="Your email address" required />
-                    <button type="submit" class="btn btn--color-1"><span>Subscribe</span></button>
-                </div>
-                <span style="display:none">
-                        Leave field empty
-                        <input type="text" name="subscribe-form" value="" tabindex="-1" autocomplete="off">
-                    </span>
-            </form>
 
             <div class="social">
                 <a href="<?= $linkedIn; ?>" target="_blank" class="social__item soc-in">
@@ -104,6 +71,11 @@
                                 v-60.5H143.4V460H246V287.5c0,0,77.5-108.3,110.2-28.8V460h102.6V246.6C458.8,198.8,426.1,159,382,147.5z"/>
                         <path d="M50.2,100.6c27.7,0,50.2-22.5,50.2-50.3C100.4,22.5,77.9,0,50.2,0C22.5,0,0,22.5,0,50.3C0,78.1,22.5,100.6,50.2,100.6z"/>
                         </svg>
+                </a>
+                <a href="<?= $twitter; ?>" target="_blank" class="social__item soc-tw">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 460 373.6" style="enable-background:new 0 0 460 373.6;" xml:space="preserve">
+                        <path d="M412.7,93.1c0.3,4.1,0.3,8.2,0.3,12.3c0,124.6-94.9,268.2-268.2,268.2c-53.4,0-103-15.5-144.8-42.3    c7.6,0.9,14.9,1.2,22.8,1.2c44.1,0,84.6-14.9,117-40.3c-41.4-0.9-76.2-28-88.1-65.4c5.8,0.9,11.7,1.5,17.8,1.5    c8.5,0,16.9-1.2,24.8-3.2c-43.2-8.8-75.6-46.7-75.6-92.5v-1.2c12.5,7,27.1,11.4,42.6,12c-25.4-16.9-42-45.8-42-78.5    c0-17.5,4.7-33.6,12.8-47.6c46.4,57.2,116.2,94.6,194.4,98.7c-1.5-7-2.3-14.3-2.3-21.6c0-52,42-94.3,94.3-94.3    c27.1,0,51.7,11.4,68.9,29.8c21.3-4.1,41.7-12,59.8-22.8c-7,21.9-21.9,40.3-41.4,52c19-2,37.4-7.3,54.3-14.6    C447.2,63,431.1,79.7,412.7,93.1L412.7,93.1z"/>
+                    </svg>
                 </a>
                 <a href="<?= $hackerRank; ?>" target="_blank" class="social__item soc-hakerrank">
                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -153,6 +125,25 @@
                         </svg>
                 </a>
             </div>
+
+            <form class="subscribe-form" method="post" action="https://alexalmostengineer.us19.list-manage.com/subscribe/post?u=b065e3f15464bd0d6caa4a3ae&amp;id=ba9874b9ae" target="_blank">
+                <div class="subscribe-form__field">
+                    <input type="email" name="EMAIL" placeholder="Your email address" required />
+                    <input type="hidden" name="b_b065e3f15464bd0d6caa4a3ae_ba9874b9ae" tabindex="-1" value="">
+                    <button type="submit" class="btn btn--color-1" value="Subscribe"><span>Subscribe</span></button>
+                </div>
+                <span style="display:none">
+                        Leave field empty
+                        <input type="text" name="subscribe-form" value="" tabindex="-1" autocomplete="off">
+                    </span>
+            </form>
+
+            <nav class="navigation">
+                <a href="<?= get_permalink(HOME); ?>" class="is-current">Home</a>
+                <a href="<?= get_category_link(ALG_and_DS); ?>">Algorithms and Data structures</a>
+                <a href="<?= get_permalink(PROJECTS); ?>">Projects</a>
+                <a href="<?= get_permalink(BOOKS); ?>">Books suggestions</a>
+            </nav>
 
         </div>
     </header>

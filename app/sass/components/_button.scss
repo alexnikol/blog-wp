@@ -21,9 +21,13 @@
       color: $btn_1_text;
       transition: background-color .3s ease, color .3s ease;
 
-      &:active {
+      &:active, &:focus {
         color: $btn_1_text;
         background-color: $btn_1_hover_back;
+
+        span {
+          color: $btn_1_text;
+        }
       }
 
     }

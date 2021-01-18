@@ -2,4 +2,5 @@
 node_modules/
 dist/wp-config.php
 wp-config.php
+package-lock.json
 dist/wp-content/themes/blog-wp/assets/*.html

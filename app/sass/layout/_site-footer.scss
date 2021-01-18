@@ -2,9 +2,36 @@
 // This file contains all styles related to the footer of the site/application.
 // -----------------------------------------------------------------------------
 .site-footer{
-  height: 30px;
   margin-top: 50px;
+  padding: 40px 16px 35px;
   background-color: #ee4e3a;
+  text-align: center;
+
+  .author {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    &__photo{
+      margin-right: 20px;
+    }
+
+    &__title {
+      margin-top: 8px;
+      margin-bottom: 13px;
+      font-size: 19px;
+    }
+  }
+
+  .social {
+
+    &__item {
+
+      svg {
+        fill: #fff;
+      }
+    }
+  }
 }
 @media (min-width: $phone-landscape) {
   .site-footer {
@@ -14,11 +41,31 @@
 @media (min-width: $tablet-portrait) {
   .site-footer {
     margin-top: 100px;
+    padding-top: 45px;
+    padding-bottom: 40px;
 
+    &__layout {
+      max-width: 970px;
+      margin: 0 auto;
+    }
   }
 }
 @media (min-width: $tablet-landscape) {
   .site-footer {
+
+    .social {
+
+      &__item{
+
+        svg{
+          transition: fill .3s ease;
+        }
+
+        &:hover svg{
+          fill: #000;
+        }
+      }
+    }
 
   }
 }

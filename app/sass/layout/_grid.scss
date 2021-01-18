@@ -11,15 +11,17 @@
   }
 
   &__item-thumbnail{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    position: relative;
     overflow: hidden;
 
     img{
-      display: block;
-      max-width: 100%;
-      max-height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
     }
 
   }
@@ -140,7 +142,7 @@
 
   }
 
-  &--tail{
+  &--tail {
 
     .grid {
 
@@ -148,10 +150,69 @@
         flex: 1 0 auto;
       }
 
-    }
+      &__item-thumbnail{
+        padding-bottom: 67%;
+      }
 
+      &__item-footer{
+
+        .social {
+          justify-content: flex-end;
+
+          &__item {
+            margin-left: 10px;
+
+            svg {
+              height: 20px;
+              fill: #333;
+            }
+
+            &:hover svg {
+              fill: #ee4e3a;
+            }
+          }
+        }
+      }
+    }
   }
 
+  &--rows {
+
+    .grid {
+      &__item-thumbnail{
+        padding-bottom: 100%;
+      }
+
+      &__item-title {
+        margin-bottom: 20px;
+      }
+
+      &__item-content{
+        margin-bottom: auto;
+      }
+
+      &__item-footer{
+        margin-top: 13px;
+      }
+    }
+  }
+
+  &--twist {
+    .grid {
+
+      &__item-thumbnail{
+        padding-bottom: 130%;
+      }
+
+      &__item-title {
+        margin-bottom: 20px;
+      }
+
+      &__item-content{
+        margin-bottom: auto;
+      }
+    }
+  }
 }
 @media (min-width: $phone-landscape) {
   .grid {
@@ -204,6 +265,7 @@
           width: 255px;
           height: 255px;
           flex: 0 0 255px;
+          padding-bottom: 0;
 
           img{
             width: inherit;
@@ -233,6 +295,55 @@
 
     }
 
+    &--twist {
+      max-width: 970px;
+      margin: 0 auto;
+
+      .grid{
+
+        &__layout {
+          display: flex;
+          align-items: stretch;
+          justify-content: space-between;
+          flex-wrap: wrap;
+        }
+
+        &__item{
+          flex-direction: row;
+          width: calc( 50% - 14px );
+        }
+
+        &__item-thumbnail{
+          width: 255px;
+          height: 330px;
+          flex: 0 0 255px;
+          padding-bottom: 0;
+
+          img{
+            width: inherit;
+            height: 100%;
+            -o-object-fit: cover;
+            object-fit: cover;
+          }
+
+        }
+
+        &__item-body{
+          width: calc( 100% - 255px );
+          padding: 20px 25px;
+        }
+
+        &__item-footer{
+          flex-direction: row-reverse;
+          justify-content: flex-start;
+
+          & > * {
+            margin-left: 20px;
+          }
+
+        }
+      }
+    }
   }
 }
 @media (min-width: $tablet-landscape) {

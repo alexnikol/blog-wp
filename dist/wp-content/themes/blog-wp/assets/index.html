@@ -32,12 +32,16 @@
 
     <title>Title</title>
 
+    <link rel="stylesheet" href="css/preload.css">
     <link rel="stylesheet" href="css/common.css">
 
 </head>
 <body>
 
-    
+    <div id="preload">
+    <span id="preload__loading-line"></span>
+</div>
+
 
     <!-- site__header -->
 <header class="site-header">
@@ -66,25 +70,6 @@
             <h2 class="author__title">Alex_almost_engineer</h2>
 
         </div>
-
-        <nav class="navigation">
-            <a href="#">iOS</a>
-            <a href="#">Python</a>
-            <a href="#">iOS</a>
-            <a href="#">Python</a>
-            <a href="#">Python</a>
-        </nav>
-
-        <form class="subscribe-form" method="post">
-            <div class="subscribe-form__field">
-                <input type="email" name="email" placeholder="Your email address" required="">
-                <button type="submit" class="btn btn--color-1"><span>Subscribe</span></button>
-            </div>
-            <span style="display:none">
-                    Leave field empty
-                    <input type="text" name="subscribe-form" value="" tabindex="-1" autocomplete="off">
-                </span>
-        </form>
 
         <div class="social">
             <a href="#" class="social__item soc-in">
@@ -140,9 +125,29 @@
             </a>
         </div>
 
+        <form class="subscribe-form" method="post">
+            <div class="subscribe-form__field">
+                <input type="email" name="email" placeholder="Your email address" required="">
+                <button type="submit" class="btn btn--color-1"><span>Subscribe</span></button>
+            </div>
+            <span style="display:none">
+                    Leave field empty
+                    <input type="text" name="subscribe-form" value="" tabindex="-1" autocomplete="off">
+                </span>
+        </form>
+
+        <nav class="navigation">
+            <a href="#">iOS</a>
+            <a href="#">Python</a>
+            <a href="#">iOS</a>
+            <a href="#">Python</a>
+            <a href="#">Python</a>
+        </nav>
+
     </div>
 </header>
 <!-- /site__header -->
+
 
     <!-- site__content -->
     <div class="site-content">

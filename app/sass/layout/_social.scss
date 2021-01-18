@@ -1,40 +1,21 @@
 .social {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   position: relative;
-  width: 100%;
-  max-width: 320px;
-  margin: 0 auto;
   z-index: 2;
   
   &__item{
+    margin-right: 15px;
 
     svg{
       display: block;
       height: 25px;
-      fill: #fff;
+      fill: #333;
     }
-
-  }
-
-}
-@media (min-width: $phone-landscape) {
-  .social {
-
   }
 }
 @media (min-width: $tablet-portrait) {
   .social {
-    max-width: 300px;
-
-    &__item{
-
-      svg{
-        height: 30px;
-      }
-
-    }
 
   }
 }
@@ -47,17 +28,10 @@
         transition: fill .3s ease;
       }
 
-      &:hover svg{
-        fill: #000;
+      &:hover svg {
+        color: #000;
       }
-
     }
-
-  }
-}
-@media (min-width: $desktop) {
-  .social {
-
   }
 }
 

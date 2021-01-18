@@ -4,8 +4,6 @@
 
         "use strict";
 
-        new Preload();
-
         $.each( $( '.js-video' ), function() {
             new SetSizeIframe ( $( this ) );
         } );
@@ -45,30 +43,6 @@
         _construct()
     };
 
-    var Preload = function () {
-
-        //private properties
-        var _preload = $( '#preload' );
-
-        //private methods
-        function _showSite() {
-
-            _preload.addClass( 'preload_loaded' );
-
-            _preload.on( 'webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function() {
-                _preload.remove();
-            } );
-
-        };
-
-        //public properties
-
-        //public methods
-
-        document.addEventListener( 'DOMContentLoaded', _showSite() );
-
-    };
-
     var SetSizeIframe = function (obj) {
 
         //private properties
@@ -102,5 +76,28 @@
         _construct();
 
     };
+
+    function Preload () {
+
+        var preloader = document.getElementById('preload'),
+            loadingLine = document.getElementById('preload__loading-line');
+
+        window.addEventListener('load', LoadLine);
+
+        function LoadLine() {
+            loadingLine.classList.add('load');
+            ShowSite();
+        }
+
+        function ShowSite() {
+            preloader.classList.add('preload_loaded');
+            preloader.addEventListener('transitionend', function (e) {
+                e.propertyName === 'opacity' && preloader.remove();
+            });
+        }
+
+    }
+
+    Preload();
 
 } )();
