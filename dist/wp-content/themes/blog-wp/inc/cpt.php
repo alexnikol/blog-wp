@@ -115,3 +115,40 @@ function book_post_type_projects() {
 }
 
 add_action('init', 'book_post_type_projects');
+
+function interview_questions_post_type() {
+
+    $supports = array(
+        'title',
+        'author',
+        'custom-fields'
+    );
+
+    $labels = array(
+        'name' => _x('Interview Q/A', 'plural'),
+        'singular_name' => _x('Interview Q/A', 'singular'),
+        'menu_name' => _x('Interview Q/A', 'admin menu'),
+        'name_admin_bar' => _x('Interview Q/A', 'admin bar'),
+        'add_new' => _x('Add New', 'add question'),
+        'add_new_item' => __('Add New question'),
+        'new_item' => __('New question'),
+        'edit_item' => __('Edit questions'),
+        'view_item' => __('View questions'),
+        'all_items' => __('All questions'),
+        'search_items' => __('Search questions'),
+        'not_found' => __('No questions found.'),
+    );
+
+    $args = array(
+        'supports' => $supports,
+        'labels' => $labels,
+        'public' => true,
+        'query_var' => true,
+        'rewrite' => array('slug' => 'interview_question'),
+        'has_archive' => true,
+        'hierarchical' => false,
+    );
+    register_post_type('interview_question', $args);
+}
+
+add_action('init', 'interview_questions_post_type');
