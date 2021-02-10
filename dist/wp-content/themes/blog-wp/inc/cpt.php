@@ -152,3 +152,17 @@ function interview_questions_post_type() {
 }
 
 add_action('init', 'interview_questions_post_type');
+
+function topic_category_taxonomy() {
+    register_taxonomy('interview_question_category','interview_question',
+        array(
+            'hierarchical' => true,
+            'label' => 'Question Category',
+            'query_var' => true,
+            'rewrite' => array(
+                'slug' => 'interview_question_category'
+            )
+        )
+    );
+}
+add_action( 'init', 'topic_category_taxonomy');
