@@ -73,7 +73,7 @@ add_action( 'admin_init', 'remove_menu_non_admin' );
 
 function remove_menu_non_admin () {
     remove_menu_page( 'edit-comments.php' );
-    remove_menu_page( 'edit.php?post_type=acf-field-group' );
+//    remove_menu_page( 'edit.php?post_type=acf-field-group' );
 
     if ( !current_user_can('administrator') ) {
         remove_menu_page( 'index.php' );

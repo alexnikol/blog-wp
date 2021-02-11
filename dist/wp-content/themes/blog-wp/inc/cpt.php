@@ -12,7 +12,7 @@ function remove_content_editor() {
 add_action( 'admin_head', 'remove_content_editor');
 
 // Remove Excess Menu's Items
-function remove_menus(){
+function remove_menus() {
     remove_menu_page( 'edit-comments.php' );
 }
 
